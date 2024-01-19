@@ -1,0 +1,54 @@
+{
+  "verses": [
+    {
+      "verse": "Genesis 1:1",
+      "text": "In the beginning, God created the heavens and the earth.",
+      "paraphrases":[
+        "God loved the world so much that he gave his only Son. Anyone who believes in him will not die but will have eternal life.",
+        "At the start of everything, the heavens and the earth were brought into existence by God.",
+        "At the start, the heavens and the earth were created by God.",
+        "God made the heavens and the earth at the start."
+        ]
+    },
+    {
+      "verse": "Psalm 23:1",
+      "text": "The Lord is my shepherd; I shall not want.",
+      "paraphrases": [
+        "I do not lack anything because the Lord is my guide.",
+        "The Shepherd is my guide and I will not desire anything else.",
+        "I have no needs because the Lord takes care of me like a shepherd.",
+        "The Lord is my guide and caretaker; I will not be lacking anything."
+      ]
+    },
+    {
+      "verse": "John 3:16",
+      "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+      "paraphrases":[
+        "God loved the world so much that he offered his only son to grant everlasting life to anyone who believes in him and prevent them from perishing.",
+        "God loved the world so much that he gave his only Son, so that anyone who has faith in him will have everlasting life and not die.",
+        "God loved the world so much that he gave his one and only Son, so that anyone who believes in him would not die but have everlasting life.",
+        "God loved the world so much that he sent his only son to save whoever believes in him from perishing and to give them eternal life."
+      ]
+    },
+    {
+      "verse": "Hebrews 13:2",
+      "text": "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares.",
+      "paraphrases": [
+        "It's essential to be hospitable to unfamiliar people since some may have entertained divine beings unknowingly.",
+        "Do not forget to be hospitable to those whom you do not know, for some of them may be angels in disguise.",
+        "It's important to be hospitable towards unfamiliar individuals, as some may unknowingly be divine beings.",
+        "Make sure to be kind and welcoming to unfamiliar individuals, as some may unknowingly host celestial beings."
+      ]
+    },
+    {
+      "verse": "James 1:2-4",
+      "text": "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.",
+      "paraphrases": [
+        "Rejoice in every difficulty that comes your way, dear siblings, because you are aware that going through challenging situations will strengthen your beliefs and determination. Embrace this growth and let it fully shape you into a mature and fulfilled person without anything missing.",
+        "My fellow brethren, rejoice when you encounter different types of challenges because these tribulations will test your faith and build your perseverance. Allow your perseverance to have its intended effect, so that you can mature and become whole, lacking nothing.",
+        "My brothers, rejoice when you face challenges of different types, because you are aware that they will help you develop strength in your beliefs. Endure through them, in order to reach completeness and perfectness, without any shortcomings.",
+        "Brothers, when you face difficulties of different kinds, consider it a joy because through these challenges, your faith will be tested and you will become more persevering. Allow perseverance to grow and develop, so that you will become fully mature and lacking in nothing."
+      ]
+    }
+  ]
+}
