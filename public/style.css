@@ -28,7 +28,9 @@ h1 {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #9FE2BF;
+    font-family: Aria, sans-serif;
+    font-size: 20px;
 }
 
 /*Style for box titles*/
@@ -52,7 +54,7 @@ h1 {
 
 /*Style for input text from user*/
 .box-input{
-    background-color: #9FE2BF;
+    background-color: #fff;
     width: 100%;
     padding: 5px;
     font-size: 16px;
@@ -165,7 +167,7 @@ h1 {
 }
 
 .result {
-    color: black;
+    color: #fff;
 }
 
 #peek-verse{
