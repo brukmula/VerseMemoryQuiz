@@ -15,6 +15,7 @@ const closePeekButton = document.getElementById('close-peek-button');
 let bibleData; //Variable to keep track of data from JSON file
 let currentVerse; //Store current verse JSON reference
 let verseText; // Verse content
+let verseId; // Store the verses reference
 let currentDifficulty = 50; //Default difficulty is 50%
 let peekUsed = false; //Track if the peek feature has been used
 
@@ -44,6 +45,7 @@ function displayVerse(){
 
     currentVerse = randomVerse;
     verseText = randomVerse.text;
+    verseId = randomVerse.verse;
     paraphraseContainer.textContent = randomParaphrase;
     userInput.value = '';
     resultContainer.textContent = '';
@@ -51,7 +53,8 @@ function displayVerse(){
 
 //Split the translated and reference texts into words
 function tokenize(text){
-    return text.toLowerCase().split('');
+    //Remove punctuation and split into words
+    return text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase().split('');
 }
 
 //create n-grams from tokens.
@@ -106,12 +109,11 @@ function calculateSimilarity(userInput, referenceVerse) {
     }
 
     return (geometricMean * brevityPenalty) * 100;
-
 }
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
@@ -167,7 +169,7 @@ userInput.addEventListener('input', () => {
 
     //Check if user correct percentage is greater than or equal to selected difficulty
     if(similarityPercentage >= currentDifficulty){
-        verseContainer.textContent = verseText;
+        verseContainer.textContent =   verseId +  ': '  +verseText;
         resultContainer.textContent = 'Correct!'
     }
 
