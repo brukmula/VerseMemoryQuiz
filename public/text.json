@@ -4,12 +4,89 @@
       "verse": "Genesis 1:1",
       "text": "In the beginning, God created the heavens and the earth.",
       "paraphrases":[
-        "God loved the world so much that he gave his only Son. Anyone who believes in him will not die but will have eternal life.",
+        "At the start, the heavens and the earth were brought into existence by God.",
         "At the start of everything, the heavens and the earth were brought into existence by God.",
         "At the start, the heavens and the earth were created by God.",
         "God made the heavens and the earth at the start."
         ]
     },
+    {
+      "verse": "Genesis 1:27",
+      "text": "So God created man in his own image, in the image of God he created him; male and female he created them.",
+      "paraphrases": [
+        "God made humans in his own likeness, both male and female.",
+        "In the likeness of God, humans were brought forth, both male and female.",
+        "Humans were made by God to bear his likeness, both male and female.",
+        "God made human beings in his likeness - both male and female."
+      ]
+    },
+
+    {
+      "verse": "Genesis 2:24",
+      "text": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh.\"",
+      "paraphrases": [
+        "As a result, a husband must leave his parents and cling to his wife, and they will become one body.",
+        "Thus, a man is required to abandon his parents and cling to his spouse, becoming united as one entity.",
+        "As a result, a male individual will depart from his parents and cling to his spouse, and they will unite as one entity.",
+        "Hence, a man will depart from his parents and cling to his spouse, and they will become united as one."
+      ]
+    },
+
+    {
+      "verse": "Genesis 12:2",
+      "text": "And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing.",
+      "paraphrases": [
+        "The speaker promises to transform the listener into a prominent nation and bestow blessings upon them, making their name renowned and ensuring they become a source of good fortune.",
+        "God promised to turn you into a prominent nation, bless you, and make your name renowned, causing you to bless others.",
+        "God promises to transform you into a prosperous nation and bless you with a great reputation, thus allowing you to also bless others.",
+        "God promises to transform you into a thriving nation and bless you immensely, elevating your reputation to the point where you'll become a source of blessing for others."
+      ]
+    },
+
+    {
+      "verse": "Genesis 15:6",
+      "text": "And he believed the Lord, and he counted it to him as righteousness.",
+      "paraphrases": [
+        "He trusted in the Lord, and as a result, the Lord considered him righteous.",
+        "The individual trusted in the Lord, and as a result, he was considered righteous.",
+        "The man had faith in the Lord, and this was recognized as righteousness.",
+        "The man had faith in the Lord, and that was considered to be righteous behavior."
+      ]
+    },
+
+    {
+      "verse": "Genesis 50:20",
+      "text": "As for you, you meant evil against me, but God meant it for good, to bring it about that many people should be kept alive, as they are today.",
+      "paraphrases": [
+        "Regarding you, your intention was to do harm to me, but God intended it for good, and as a result, many individuals are still alive today.",
+        "You had bad intentions towards me, but God turned the situation into a positive one and allowed many people to stay alive because of it.",
+        "You intended to harm me, but God intended it for good so that many people could live, which they continue to do so today.",
+        "You had bad intentions towards me, however, God turned it around for the greater good, ensuring that many individuals survive even to this day."
+      ]
+    },
+
+    {
+      "verse": "Exodus 3:14",
+      "text": "God said to Moses, “I am who I am.” And he said, “Say this to the people of Israel: ‘I am has sent me to you.",
+      "paraphrases": [
+        "Moses was told by God to inform the Israelites that \"I am\" has sent him.",
+        "Moses reported that God instructed him to tell the people of Israel that it was \"I am\" who sent him.",
+        "Moses was told by God that he should inform the Israelites that \"I am\" had sent him.",
+        "Instructed by God, Moses told the Israelites that their messenger was \"I am\" when he revealed Himself by saying \"I am who I am.\""
+      ]
+    },
+
+    {
+      "verse": "Exodus 14:14",
+      "text": "The Lord will fight for you, and you have only to be silent.",
+      "paraphrases": [
+        "God will battle on your behalf, and you simply need to remain quiet.",
+        "God will take up the battle on your behalf, and all you need to do is remain quiet.",
+        "God will defend you, all you need to do is stay quiet.",
+        "God will battle on your behalf and all you need to do is remain quiet."
+      ]
+    },
+
     {
       "verse": "Psalm 23:1",
       "text": "The Lord is my shepherd; I shall not want.",
@@ -48,6 +125,16 @@
         "My fellow brethren, rejoice when you encounter different types of challenges because these tribulations will test your faith and build your perseverance. Allow your perseverance to have its intended effect, so that you can mature and become whole, lacking nothing.",
         "My brothers, rejoice when you face challenges of different types, because you are aware that they will help you develop strength in your beliefs. Endure through them, in order to reach completeness and perfectness, without any shortcomings.",
         "Brothers, when you face difficulties of different kinds, consider it a joy because through these challenges, your faith will be tested and you will become more persevering. Allow perseverance to grow and develop, so that you will become fully mature and lacking in nothing."
+      ]
+    },
+    {
+      "verse":"Romans 10:9-10",
+      "text":"because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved.",
+      "paraphrases":[
+        "If you openly admit that Jesus is your Lord and have faith that God resurrected him, then you will attain salvation. It is through believing with your heart that you are declared righteous and by confessing with your mouth that you are delivered.",
+        "If one acknowledges verbally that Jesus is Lord and genuinely believes in their heart that God resurrected him from death, they shall receive salvation. This is because justifying faith springs from the heart and confession follows through with the mouth, leading to ultimate redemption.",
+        "If you declare publicly that Jesus is Lord and genuinely believe in your heart that God brought him back to life from the dead, then you will attain salvation. This is because belief in the heart leads to justification, and confession with the mouth brings about salvation.",
+        "If you openly admit and declare that Jesus is Lord using your mouth, and if you also have faith and trust in your heart that God brought him back to life, then redemption and salvation will be granted to you. One is declared righteous by having faith in their heart, while salvation is attained by openly confessing with their mouth."
       ]
     }
   ]
