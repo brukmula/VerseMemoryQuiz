@@ -40,6 +40,7 @@ versionSelect.addEventListener('change', () => {
     verseRef = versionSelect.value;
     peekUsed = false; //Set peek back to false since version has changed
     verseText = currentVerse[verseRef];
+    verseContainer.innerText = '';
 })
 
 //Retrieve random verse from JSON file
@@ -137,7 +138,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
@@ -184,6 +185,7 @@ redoButton.addEventListener('click', () => {
     displayVerse();
 })
 
+//When check score button is clicked
 scoreButton.addEventListener('click', () => {
     //Show or hide current score
     if(showCurrentScore === false){
@@ -217,6 +219,9 @@ userInput.addEventListener('input', () => {
     if(similarityPercentage >= currentDifficulty){
         verseContainer.textContent =   verseId +  ': '  +verseText;
         resultContainer.textContent = 'Correct!'
+    }
+    else if(similarityPercentage < currentDifficulty){
+        verseContainer.textContent = '';
     }
 
 });
