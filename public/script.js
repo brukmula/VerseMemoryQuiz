@@ -7,6 +7,8 @@ const difficultySelect = document.getElementById('difficulty');
 const redoButton = document.getElementById('redo');
 const paraphraseButton = document.getElementById('newParaphrase');
 const versionSelect = document.getElementById('versionSelect');
+const scoreButton = document.getElementById('scoreButton');
+const scoreDisplay = document.getElementById('scoreDisplay');
 
 //Peek features
 const peekButton = document.getElementById('peek-button');
@@ -14,29 +16,31 @@ const peekWindow = document.getElementById('peek-window');
 const peekVerse = document.getElementById('peek-verse');
 const closePeekButton = document.getElementById('close-peek-button');
 
-//Paths to bible text files
-const esv = 'BibleTexts/esv.txt';
-const kjv = 'BibleTexts/esv.txt';
-const net = 'BibleTexts/esv.txt';
-const niv = 'BibleTexts/esv.txt';
-const nlt = 'BibleTexts/esv.txt';
-
-
 let bibleData; //Variable to keep track of data from JSON file
 let currentVerse; //Store current verse JSON reference
 let verseText; // Verse content
 let verseId; // Store the verses reference
 let currentDifficulty = 50; //Default difficulty is 50%
 let peekUsed = false; //Track if the peek feature has been used
-
-
+let verseRef = 'esv'; // Keep track of 8 digit reference from json and set it to esv by default
+let showCurrentScore = false; //By default, don't show current score
+let currentScore; //Keep track of current score
 
 //Receive difficulty level from user
 difficultySelect.addEventListener('change', () => {
     currentDifficulty = parseInt(difficultySelect.value);
     resultContainer.textContent = '';
     verseContainer.textContent = '';
+    if(showCurrentScore === true) {
+        scoreDisplay.innerText = 'Score: '+ currentScore + '%';
+    }
 });
+
+versionSelect.addEventListener('change', () => {
+    verseRef = versionSelect.value;
+    peekUsed = false; //Set peek back to false since version has changed
+    verseText = currentVerse[verseRef];
+})
 
 //Retrieve random verse from JSON file
 function getRandomVerse(){
@@ -56,7 +60,7 @@ function displayVerse(){
     const randomParaphrase = getRandomParaphrase(randomVerse);
 
     currentVerse = randomVerse;
-    verseText = randomVerse.text;
+    verseText = randomVerse[verseRef];
     verseId = randomVerse.verse;
     paraphraseContainer.textContent = randomParaphrase;
     userInput.value = '';
@@ -105,7 +109,6 @@ function calculatePrecision(translatedNgrams, referenceNgrams){
 }
 
 
-
 //Calculate similarity using BLEU score method
 function calculateSimilarity(userInput, referenceVerse) {
     let tokenizedInput = tokenize(userInput);
@@ -127,7 +130,9 @@ function calculateSimilarity(userInput, referenceVerse) {
         brevityPenalty = Math.exp(1-tokenizedReference.length/tokenizedInput.length);
     }
 
-    return (geometricMean * brevityPenalty) * 100;
+    //Smooth Bleu score
+    const percentageScore = (geometricMean * brevityPenalty) * 100;
+    return Math.round(percentageScore + (100 - percentageScore) * (geometricMean*brevityPenalty));
 }
 
 
@@ -179,12 +184,34 @@ redoButton.addEventListener('click', () => {
     displayVerse();
 })
 
+scoreButton.addEventListener('click', () => {
+    //Show or hide current score
+    if(showCurrentScore === false){
+        showCurrentScore = true;
+        scoreButton.innerText = 'Hide Score';
+        userInput.placeholder = 'Begin typing to see score';
+        scoreDisplay.innerText = 'Score: ' + currentScore + '%' ;
+    }
+    else {
+        showCurrentScore = false;
+        scoreButton.innerText = 'Show Score';
+        userInput.placeholder = 'Enter the verse';
+        scoreDisplay.innerText = '';
+    }
+
+})
+
 //Wait for user to check if they are correct
 userInput.addEventListener('input', () => {
     const userAnswer = userInput.value.trim();
     const similarityPercentage = calculateSimilarity(userAnswer, verseText);
+    currentScore = similarityPercentage;
 
-    console.log(similarityPercentage);
+
+    //Update current score
+    if(showCurrentScore === true){
+        scoreDisplay.innerText = 'Score: ' + currentScore + '%';
+    }
 
     //Check if user correct percentage is greater than or equal to selected difficulty
     if(similarityPercentage >= currentDifficulty){

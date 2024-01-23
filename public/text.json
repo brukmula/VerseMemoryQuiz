@@ -2,7 +2,11 @@
   "verses": [
     {
       "verse": "Genesis 1:1",
-      "text": "In the beginning, God created the heavens and the earth.",
+      "ref": "01001001",
+      "esv": " In the beginning, God created the heavens and the earth.",
+      "niv": " In the beginning God created the heavens and the earth.",
+      "nlt": " In the beginning God created the heavens and the earth.",
+      "kjv": " In the beginning God created the heaven and the earth.",
       "paraphrases":[
         "At the start, the heavens and the earth were brought into existence by God.",
         "At the start of everything, the heavens and the earth were brought into existence by God.",
@@ -12,7 +16,12 @@
     },
     {
       "verse": "Genesis 1:27",
-      "text": "So God created man in his own image, in the image of God he created him; male and female he created them.",
+      "ref": "01001027",
+      "esv": " So God created man in his own image, in the image of God he created him; male and female he created them.",
+      "niv": " So God created mankind in his own image, in the image of God he created them; male and female he created them.",
+      "nlt": " So God created human beings in his own image. In the image of God he created them; male and female he created them.",
+      "kjv": " So God created man in his own image, in the image of God created he him; male and female created he them.",
+      "net": " God created humankind in his own image, in the image of God he created them, male and female he created them.",
       "paraphrases": [
         "God made humans in his own likeness, both male and female.",
         "In the likeness of God, humans were brought forth, both male and female.",
@@ -23,7 +32,12 @@
 
     {
       "verse": "Genesis 2:24",
-      "text": "Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh.\"",
+      "ref": "01002024",
+      "esv": " Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh.",
+      "niv": " That is why a man leaves his father and mother and is united to his wife, and they become one flesh.",
+      "nlt": " This explains why a man leaves his father and mother and is joined to his wife, and the two are united into one.",
+      "kjv": " Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
+      "net": " That is why a man leaves his father and mother and unites with his wife, and they become a new family.",
       "paraphrases": [
         "As a result, a husband must leave his parents and cling to his wife, and they will become one body.",
         "Thus, a man is required to abandon his parents and cling to his spouse, becoming united as one entity.",
@@ -34,7 +48,12 @@
 
     {
       "verse": "Genesis 12:2",
-      "text": "And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing.",
+      "ref": "01012002",
+      "esv": " And I will make of you a great nation, and I will bless you and make your name great, so that you will be a blessing.",
+      "niv": " “I will make you into a great nation, and I will bless you; I will make your name great, and you will be a blessing.",
+      "nlt": " I will make you into a great nation. I will bless you and make you famous, and you will be a blessing to others.",
+      "kjv": " And I will make of thee a great nation, and I will bless thee, and make thy name great; and thou shalt be a blessing:",
+      "net": " Then I will make you into a great nation, and I will bless you, and I will make your name great, so that you will exemplify divine blessing.",
       "paraphrases": [
         "The speaker promises to transform the listener into a prominent nation and bestow blessings upon them, making their name renowned and ensuring they become a source of good fortune.",
         "God promised to turn you into a prominent nation, bless you, and make your name renowned, causing you to bless others.",
@@ -45,7 +64,12 @@
 
     {
       "verse": "Genesis 15:6",
-      "text": "And he believed the Lord, and he counted it to him as righteousness.",
+      "ref": "01015006",
+      "esv": " And he believed the Lord, and he counted it to him as righteousness.",
+      "niv": " Abram believed the Lord, and he credited it to him as righteousness.",
+      "nlt": " And Abram believed the Lord, and the Lord counted him as righteous because of his faith.",
+      "kjv": " And he believed in the Lord; and he counted it to him for righteousness.",
+      "net": " Abram believed the Lord, and the Lord considered his response of faith as proof of genuine loyalty.",
       "paraphrases": [
         "He trusted in the Lord, and as a result, the Lord considered him righteous.",
         "The individual trusted in the Lord, and as a result, he was considered righteous.",
@@ -56,7 +80,12 @@
 
     {
       "verse": "Genesis 50:20",
-      "text": "As for you, you meant evil against me, but God meant it for good, to bring it about that many people should be kept alive, as they are today.",
+      "ref": "01050020",
+      "esv": " As for you, you meant evil against me, but God meant it for good, to bring it about that many people should be kept alive, as they are today.",
+      "niv": " You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives.",
+      "nlt": " You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people.",
+      "kjv": " But as for you, ye thought evil against me; but God meant it unto good, to bring to pass, as it is this day, to save much people alive.",
+      "net": " As for you, you meant to harm me, but God intended it for a good purpose, so he could preserve the lives of many people, as you can see this day.",
       "paraphrases": [
         "Regarding you, your intention was to do harm to me, but God intended it for good, and as a result, many individuals are still alive today.",
         "You had bad intentions towards me, but God turned the situation into a positive one and allowed many people to stay alive because of it.",
@@ -67,7 +96,12 @@
 
     {
       "verse": "Exodus 3:14",
-      "text": "God said to Moses, “I am who I am.” And he said, “Say this to the people of Israel: ‘I am has sent me to you.",
+      "ref": "02003014",
+      "esv": " God said to Moses, “I am who I am.” And he said, “Say this to the people of Israel: ‘I am has sent me to you.’”",
+      "niv": " God said to Moses, “I am who I am. This is what you are to say to the Israelites: ‘I am has sent me to you.’ ”",
+      "nlt": " God replied to Moses, “I Am Who I Am. Say this to the people of Israel: I Am has sent me to you.”",
+      "kjv": " And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.",
+      "net": " God said to Moses, “I AM that I AM.” And he said, “You must say this to the Israelites, ‘I AM has sent me to you.’”",
       "paraphrases": [
         "Moses was told by God to inform the Israelites that \"I am\" has sent him.",
         "Moses reported that God instructed him to tell the people of Israel that it was \"I am\" who sent him.",
@@ -78,7 +112,12 @@
 
     {
       "verse": "Exodus 14:14",
-      "text": "The Lord will fight for you, and you have only to be silent.",
+      "ref": "02014014",
+      "esv": " The Lord will fight for you, and you have only to be silent.”",
+      "niv": " The Lord will fight for you; you need only to be still.”",
+      "nlt": " The Lord himself will fight for you. Just stay calm.”",
+      "kjv": " The Lord shall fight for you, and ye shall hold your peace.",
+      "net": " The Lord will fight for you, and you can be still.”",
       "paraphrases": [
         "God will battle on your behalf, and you simply need to remain quiet.",
         "God will take up the battle on your behalf, and all you need to do is remain quiet.",
@@ -89,7 +128,12 @@
 
     {
       "verse": "Psalm 23:1",
-      "text": "The Lord is my shepherd; I shall not want.",
+      "ref": "19023001",
+      "esv": " The Lord is my shepherd; I shall not want.",
+      "niv": " The Lord is my shepherd, I lack nothing.",
+      "nlt": " The Lord is my shepherd; I have all that I need.",
+      "kjv": " The Lord is my shepherd; I shall not want.",
+      "net": " The Lord is my shepherd, I lack nothing.",
       "paraphrases": [
         "I do not lack anything because the Lord is my guide.",
         "The Shepherd is my guide and I will not desire anything else.",
@@ -99,7 +143,12 @@
     },
     {
       "verse": "John 3:16",
-      "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+      "ref": "43003016",
+      "esv": " “For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+      "niv": " For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+      "nlt": " “For this is how God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life.",
+      "kjv": " For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+      "net": " For this is the way God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life.",
       "paraphrases":[
         "God loved the world so much that he offered his only son to grant everlasting life to anyone who believes in him and prevent them from perishing.",
         "God loved the world so much that he gave his only Son, so that anyone who has faith in him will have everlasting life and not die.",
@@ -109,7 +158,12 @@
     },
     {
       "verse": "Hebrews 13:2",
-      "text": "Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares.",
+      "ref": "58013002",
+      "esv": " Do not neglect to show hospitality to strangers, for thereby some have entertained angels unawares.",
+      "niv": " Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.",
+      "nlt": " Don’t forget to show hospitality to strangers, for some who have done this have entertained angels without realizing it!",
+      "kjv": " Be not forgetful to entertain strangers: for thereby some have entertained angels unawares.",
+      "net": " Do not neglect hospitality, because through it some have entertained angels without knowing it.",
       "paraphrases": [
         "It's essential to be hospitable to unfamiliar people since some may have entertained divine beings unknowingly.",
         "Do not forget to be hospitable to those whom you do not know, for some of them may be angels in disguise.",
@@ -119,22 +173,17 @@
     },
     {
       "verse": "James 1:2-4",
-      "text": "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.",
+      "ref": "59001002",
+      "esv": " Count it all joy, my brothers, when you meet trials of various kinds,",
+      "niv": " Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds,",
+      "nlt": " Dear brothers and sisters, when troubles of any kind come your way, consider it an opportunity for great joy.",
+      "kjv": " My brethren, count it all joy when ye fall into divers temptations;",
+      "net": " My brothers and sisters, consider it nothing but joy when you fall into all sorts of trials,",
       "paraphrases": [
         "Rejoice in every difficulty that comes your way, dear siblings, because you are aware that going through challenging situations will strengthen your beliefs and determination. Embrace this growth and let it fully shape you into a mature and fulfilled person without anything missing.",
         "My fellow brethren, rejoice when you encounter different types of challenges because these tribulations will test your faith and build your perseverance. Allow your perseverance to have its intended effect, so that you can mature and become whole, lacking nothing.",
         "My brothers, rejoice when you face challenges of different types, because you are aware that they will help you develop strength in your beliefs. Endure through them, in order to reach completeness and perfectness, without any shortcomings.",
         "Brothers, when you face difficulties of different kinds, consider it a joy because through these challenges, your faith will be tested and you will become more persevering. Allow perseverance to grow and develop, so that you will become fully mature and lacking in nothing."
-      ]
-    },
-    {
-      "verse":"Romans 10:9-10",
-      "text":"because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved.",
-      "paraphrases":[
-        "If you openly admit that Jesus is your Lord and have faith that God resurrected him, then you will attain salvation. It is through believing with your heart that you are declared righteous and by confessing with your mouth that you are delivered.",
-        "If one acknowledges verbally that Jesus is Lord and genuinely believes in their heart that God resurrected him from death, they shall receive salvation. This is because justifying faith springs from the heart and confession follows through with the mouth, leading to ultimate redemption.",
-        "If you declare publicly that Jesus is Lord and genuinely believe in your heart that God brought him back to life from the dead, then you will attain salvation. This is because belief in the heart leads to justification, and confession with the mouth brings about salvation.",
-        "If you openly admit and declare that Jesus is Lord using your mouth, and if you also have faith and trust in your heart that God brought him back to life, then redemption and salvation will be granted to you. One is declared righteous by having faith in their heart, while salvation is attained by openly confessing with their mouth."
       ]
     }
   ]
