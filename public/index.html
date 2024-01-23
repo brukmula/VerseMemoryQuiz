@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="public/style.css">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <title>Bible Verse Quiz </title>
@@ -17,6 +17,14 @@
             <option value = "25">25%</option>
             <option value = "10">10%</option>
         </select>
+    <select id = "versionSelect" class = "dropdown">
+        <option value = "none" selected = "selected" hidden>Select Version</option>
+        <option value = "ESV" >ESV</option>
+        <option value = "KJV">KJV</option>
+        <option value = "NET">NET</option>
+        <option value = "NIV">NIV</option>
+        <option value = "NLT">NLT</option>
+    </select>
     <button id = "peek-button" class = "peek-button"> Check Verse </button>
     <button id="redo" class = "redo">New Verse</button>
     <div class = "box">
@@ -26,7 +34,7 @@
     </div>
     <div class = "box">
         <p class = "box-title">Enter Your Answer</p>
-        <input type ="text" id = "user-input" class = "box-input" placeholder="Enter the verse">
+        <textarea id = "user-input" oninput="resizeTextArea()" class = "box-input" placeholder="Enter the verse"></textarea>
     </div>
     <div class = "box">
         <p class = "box-title"> Completed Verse</p>
@@ -40,6 +48,6 @@
     </div>
 </div>
 
-<script src="public/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

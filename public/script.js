@@ -1,3 +1,4 @@
+//
 const verseContainer = document.getElementById('verse');
 const paraphraseContainer = document.getElementById('paraphrase');
 const userInput = document.getElementById('user-input');
@@ -5,6 +6,7 @@ const resultContainer = document.getElementById('result');
 const difficultySelect = document.getElementById('difficulty');
 const redoButton = document.getElementById('redo');
 const paraphraseButton = document.getElementById('newParaphrase');
+const versionSelect = document.getElementById('versionSelect');
 
 //Peek features
 const peekButton = document.getElementById('peek-button');
@@ -12,12 +14,22 @@ const peekWindow = document.getElementById('peek-window');
 const peekVerse = document.getElementById('peek-verse');
 const closePeekButton = document.getElementById('close-peek-button');
 
+//Paths to bible text files
+const esv = 'BibleTexts/esv.txt';
+const kjv = 'BibleTexts/esv.txt';
+const net = 'BibleTexts/esv.txt';
+const niv = 'BibleTexts/esv.txt';
+const nlt = 'BibleTexts/esv.txt';
+
+
 let bibleData; //Variable to keep track of data from JSON file
 let currentVerse; //Store current verse JSON reference
 let verseText; // Verse content
 let verseId; // Store the verses reference
 let currentDifficulty = 50; //Default difficulty is 50%
 let peekUsed = false; //Track if the peek feature has been used
+
+
 
 //Receive difficulty level from user
 difficultySelect.addEventListener('change', () => {
@@ -49,6 +61,13 @@ function displayVerse(){
     paraphraseContainer.textContent = randomParaphrase;
     userInput.value = '';
     resultContainer.textContent = '';
+}
+
+//function to resize users guess box
+function resizeTextArea(){
+    userInput.style.height = 'auto';
+    userInput.style.height = 'auto';
+    userInput.style.height = userInput.scrollHeight + 'px';
 }
 
 //Split the translated and reference texts into words
@@ -113,7 +132,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
