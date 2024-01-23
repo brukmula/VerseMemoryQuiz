@@ -31,6 +31,7 @@ difficultySelect.addEventListener('change', () => {
     currentDifficulty = parseInt(difficultySelect.value);
     resultContainer.textContent = '';
     verseContainer.textContent = '';
+    resultContainer.innerText = '';
     if(showCurrentScore === true) {
         scoreDisplay.innerText = 'Score: '+ currentScore + '%';
     }
@@ -41,6 +42,7 @@ versionSelect.addEventListener('change', () => {
     peekUsed = false; //Set peek back to false since version has changed
     verseText = currentVerse[verseRef];
     verseContainer.innerText = '';
+    resultContainer.innerText = '';
 })
 
 //Retrieve random verse from JSON file
