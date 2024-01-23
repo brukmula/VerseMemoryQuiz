@@ -24,7 +24,7 @@ let currentDifficulty = 50; //Default difficulty is 50%
 let peekUsed = false; //Track if the peek feature has been used
 let verseRef = 'esv'; // Keep track of 8 digit reference from json and set it to esv by default
 let showCurrentScore = false; //By default, don't show current score
-let currentScore; //Keep track of current score
+let currentScore = 0; //Keep track of current score
 
 //Receive difficulty level from user
 difficultySelect.addEventListener('change', () => {
