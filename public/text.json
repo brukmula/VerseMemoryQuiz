@@ -12,7 +12,8 @@
         "At the start of everything, the heavens and the earth were brought into existence by God.",
         "At the start, the heavens and the earth were created by God.",
         "God made the heavens and the earth at the start."
-        ]
+        ],
+      "themes": ["Creation", "Beginning", "God's Power"]
     },
     {
       "verse": "Genesis 1:27",
@@ -27,7 +28,8 @@
         "In the likeness of God, humans were brought forth, both male and female.",
         "Humans were made by God to bear his likeness, both male and female.",
         "God made human beings in his likeness - both male and female."
-      ]
+      ],
+      "themes": ["Creation of Mankind", "Image of God", "Man and Woman"]
     },
 
     {
@@ -43,7 +45,8 @@
         "Thus, a man is required to abandon his parents and cling to his spouse, becoming united as one entity.",
         "As a result, a male individual will depart from his parents and cling to his spouse, and they will unite as one entity.",
         "Hence, a man will depart from his parents and cling to his spouse, and they will become united as one."
-      ]
+      ],
+      "themes": ["Marriage", "Unity", "Leaving Family"]
     },
 
     {
@@ -59,7 +62,8 @@
         "God promised to turn you into a prominent nation, bless you, and make your name renowned, causing you to bless others.",
         "God promises to transform you into a prosperous nation and bless you with a great reputation, thus allowing you to also bless others.",
         "God promises to transform you into a thriving nation and bless you immensely, elevating your reputation to the point where you'll become a source of blessing for others."
-      ]
+      ],
+      "themes": ["Blessing", "Nation Building", "God's Promise"]
     },
 
     {
@@ -75,7 +79,8 @@
         "The individual trusted in the Lord, and as a result, he was considered righteous.",
         "The man had faith in the Lord, and this was recognized as righteousness.",
         "The man had faith in the Lord, and that was considered to be righteous behavior."
-      ]
+      ],
+      "themes": ["Belief", "Faith", "Righteousness"]
     },
 
     {
@@ -91,7 +96,8 @@
         "You had bad intentions towards me, but God turned the situation into a positive one and allowed many people to stay alive because of it.",
         "You intended to harm me, but God intended it for good so that many people could live, which they continue to do so today.",
         "You had bad intentions towards me, however, God turned it around for the greater good, ensuring that many individuals survive even to this day."
-      ]
+      ],
+      "themes": ["God's Plan", "Overcoming Evil", "Preservation of Life"]
     },
 
     {
@@ -107,7 +113,8 @@
         "Moses reported that God instructed him to tell the people of Israel that it was \"I am\" who sent him.",
         "Moses was told by God that he should inform the Israelites that \"I am\" had sent him.",
         "Instructed by God, Moses told the Israelites that their messenger was \"I am\" when he revealed Himself by saying \"I am who I am.\""
-      ]
+      ],
+      "themes": ["Divine Self-Existence", "God's Identity", "Messianic Prophecy"]
     },
 
     {
@@ -123,7 +130,8 @@
         "God will take up the battle on your behalf, and all you need to do is remain quiet.",
         "God will defend you, all you need to do is stay quiet.",
         "God will battle on your behalf and all you need to do is remain quiet."
-      ]
+      ],
+       "themes": ["God's Protection", "Tranquility", "Divine Intervention"]
     },
 
     {
@@ -139,7 +147,8 @@
         "The Shepherd is my guide and I will not desire anything else.",
         "I have no needs because the Lord takes care of me like a shepherd.",
         "The Lord is my guide and caretaker; I will not be lacking anything."
-      ]
+      ],
+       "themes": ["God as Shepherd", "Providence", "Contentment"]
     },
     {
       "verse": "John 3:16",
@@ -154,7 +163,8 @@
         "God loved the world so much that he gave his only Son, so that anyone who has faith in him will have everlasting life and not die.",
         "God loved the world so much that he gave his one and only Son, so that anyone who believes in him would not die but have everlasting life.",
         "God loved the world so much that he sent his only son to save whoever believes in him from perishing and to give them eternal life."
-      ]
+      ],
+      "themes": ["God's Love", "Salvation", "Eternal Life"]
     },
     {
       "verse": "Hebrews 13:2",
@@ -169,7 +179,8 @@
         "Do not forget to be hospitable to those whom you do not know, for some of them may be angels in disguise.",
         "It's important to be hospitable towards unfamiliar individuals, as some may unknowingly be divine beings.",
         "Make sure to be kind and welcoming to unfamiliar individuals, as some may unknowingly host celestial beings."
-      ]
+      ],
+      "themes": ["Hospitality", "Angelic Encounters", "Kindness to Strangers"]
     },
     {
       "verse": "James 1:2-4",
@@ -184,7 +195,8 @@
         "My fellow brethren, rejoice when you encounter different types of challenges because these tribulations will test your faith and build your perseverance. Allow your perseverance to have its intended effect, so that you can mature and become whole, lacking nothing.",
         "My brothers, rejoice when you face challenges of different types, because you are aware that they will help you develop strength in your beliefs. Endure through them, in order to reach completeness and perfectness, without any shortcomings.",
         "Brothers, when you face difficulties of different kinds, consider it a joy because through these challenges, your faith will be tested and you will become more persevering. Allow perseverance to grow and develop, so that you will become fully mature and lacking in nothing."
-      ]
+      ],
+      "themes": ["Joy in Trials", "Perseverance", "Spiritual Maturity"]
     }
   ]
 }

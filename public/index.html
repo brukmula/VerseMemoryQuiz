@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="public/style.css">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <title>Bible Verse Quiz </title>
 </head>
 <body>
 <div id = "game-container">
-    <h1>Bible Verse Game</h1>
+    <h1>Verse Memory Quiz</h1>
         <label class = "diff" for="difficulty">Difficulty: </label>
         <select id = "difficulty" class = "dropdown">
             <option value = "none" selected = "selected" hidden>Select Difficulty</option>
@@ -27,15 +27,17 @@
     </select>
     <button id = "peek-button" class = "peek-button"> Check Verse </button>
     <button id="redo" class = "redo">New Verse</button>
+        </label><button id ="changeMode" class = "changeMode">Change Game Mode</button>
     <div class = "box">
-        <p class = "box-title">Paraphrase</p>
+        <p id = "paraphraseBoxTitle" class = "box-title">Paraphrase</p>
         <p id="paraphrase" class = "box-content"></p>
+        <p id = "themes" class = "box-content"></p>
         <button id ="newParaphrase" class = "newParaphrase">Other Paraphrase</button>
     </div>
     <div class = "box">
         <p class = "box-title">
             Enter Your Answer
-            <button id = "scoreButton">Show Score</button>
+            <button id = "scoreButton" class = "scoreButton">Show Score</button>
         <p id = "scoreDisplay"></p>
         </p>
         <textarea id = "user-input" oninput="resizeTextArea()" class = "box-input" placeholder="Enter the verse"></textarea>
@@ -52,6 +54,6 @@
     </div>
 </div>
 
-<script src="public/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

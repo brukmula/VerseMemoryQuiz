@@ -9,6 +9,9 @@ const paraphraseButton = document.getElementById('newParaphrase');
 const versionSelect = document.getElementById('versionSelect');
 const scoreButton = document.getElementById('scoreButton');
 const scoreDisplay = document.getElementById('scoreDisplay');
+const changeMode = document.getElementById('changeMode');
+const boxTitle = document.getElementById('paraphraseBoxTitle');
+const themeContainer = document.getElementById('themes');
 
 //Peek features
 const peekButton = document.getElementById('peek-button');
@@ -25,6 +28,7 @@ let peekUsed = false; //Track if the peek feature has been used
 let verseRef = 'esv'; // Keep track of 8 digit reference from json and set it to esv by default
 let showCurrentScore = false; //By default, don't show current score
 let currentScore = 0; //Keep track of current score
+let currentMode = false; //If current mode is false, show paraphrase else show verse
 
 //Receive difficulty level from user
 difficultySelect.addEventListener('change', () => {
@@ -58,6 +62,10 @@ function getRandomParaphrase(verse){
     return paraphrases[randomIndex];
 }
 
+function getThemes(verse){
+    return verse.themes;
+}
+
 function displayVerse(){
     const randomVerse = getRandomVerse();
     const randomParaphrase = getRandomParaphrase(randomVerse);
@@ -65,7 +73,15 @@ function displayVerse(){
     currentVerse = randomVerse;
     verseText = randomVerse[verseRef];
     verseId = randomVerse.verse;
-    paraphraseContainer.textContent = randomParaphrase;
+
+    //If user is playing on paraphrase mode
+    if(currentMode === false) {
+        paraphraseContainer.textContent = randomParaphrase;
+    }
+    else{
+        paraphraseContainer.textContent = verseId;
+    }
+    themeContainer.textContent = '';
     userInput.value = '';
     resultContainer.textContent = '';
 }
@@ -140,7 +156,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
@@ -150,7 +166,12 @@ fetch('/VerseMemoryQuiz/public/text.json')
 
 //Wait for user to click new paraphrase button
 paraphraseButton.addEventListener('click', () => {
-    paraphraseContainer.innerText = getRandomParaphrase(currentVerse);
+    if(currentMode === false) {
+        paraphraseContainer.innerText = getRandomParaphrase(currentVerse);
+    }
+    else {
+        themeContainer.innerText = "Themes: " + getThemes(currentVerse);
+    }
 });
 
 //Wait for user to click peek button
@@ -203,6 +224,24 @@ scoreButton.addEventListener('click', () => {
         scoreDisplay.innerText = '';
     }
 
+})
+
+//If user wants to change the game mode
+changeMode.addEventListener('click', () => {
+    //If paraphrase mode is on change to verse mode
+    if(currentMode === false) {
+        currentMode = true;
+        boxTitle.innerText = "Verse Reference";
+        paraphraseContainer.innerText = verseId;
+        paraphraseButton.innerText = "Themes";
+    }
+    else{
+        currentMode = false;
+        boxTitle.innerText = "Paraphrase";
+        themeContainer.textContent = '';
+        paraphraseContainer.innerText = verseText;
+        paraphraseButton.innerText = "Other Paraphrase";
+    }
 })
 
 //Wait for user to check if they are correct

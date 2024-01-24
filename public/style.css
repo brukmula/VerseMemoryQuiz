@@ -7,7 +7,7 @@ body {
 
 #game-container {
     background-color: #478778;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     border-color: black;
@@ -68,6 +68,18 @@ h1 {
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
+}
+
+/*Button to change game mode*/
+.changeMode {
+    margin: 30px auto;
+    border-color: #fff;
+    background-color: #fff;
+    font-size: medium;
+}
+
+.changeMode:hover {
+    background-color: #FFD791;
 }
 
 
@@ -168,6 +180,10 @@ h1 {
 
 .result {
     color: #fff;
+}
+
+.showThemes {
+    display: none;
 }
 
 .scoreButton:hover{
