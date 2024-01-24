@@ -170,7 +170,12 @@ paraphraseButton.addEventListener('click', () => {
         paraphraseContainer.innerText = getRandomParaphrase(currentVerse);
     }
     else {
-        themeContainer.innerText = "Themes: " + getThemes(currentVerse);
+        if(themeContainer.innerText === '') {
+            themeContainer.innerText = "Themes: " + getThemes(currentVerse);
+        }
+        else {
+            themeContainer.innerText = '';
+        }
     }
 });
 
