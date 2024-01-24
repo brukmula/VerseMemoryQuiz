@@ -140,7 +140,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('text.json')
+fetch('/VerseMemoryQuiz/public/text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
