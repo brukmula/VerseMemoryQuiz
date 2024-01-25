@@ -1,4 +1,4 @@
-Welcome to Verse Memory Quiz!
+<h2>Welcome to Verse Memory Quiz!</h2>
 
 This is a game designed to test your memory skills with Bible verses! 
 
@@ -34,6 +34,7 @@ For example, if you are given Genesis 1:1, you are only given the text “Genesi
 If you can’t remember the contents of the verse there is also a [Themes] button. 
 This button let’s you see the main themes of the verse to help you jog your memory. 
 You can also use [Check Verse] if you still don’t feel confident, but only once per verse! 
+
 [Show Score]
 Right above the area where you enter your guess, is a button called [Show Score]
 This button lets you see your score while typing your guess. Click once to display it and click the button again to hide it. 
