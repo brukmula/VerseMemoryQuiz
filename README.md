@@ -19,7 +19,7 @@ The default difficulty is 50%.
 If you have memorized a verse in a specific translation, select it from the dropdown menu, and you will be graded based off of that translation.
 The default translation is ESV. 
 
-The [Check Verse] button lets you peek at the original verse in case you forgot it or want to look at it before quizzing yourself.
+The <button>[Check Verse]</button> button lets you peek at the original verse in case you forgot it or want to look at it before quizzing yourself.
 However, you can only peek at the verse once per round. 
 
 The [New Verse] button selects a new verse at random from the database. When a new verse is selected, your ability to look at the original verse is restored. 
