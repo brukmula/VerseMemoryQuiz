@@ -13,6 +13,12 @@ const changeMode = document.getElementById('changeMode');
 const boxTitle = document.getElementById('paraphraseBoxTitle');
 const themeContainer = document.getElementById('themes');
 
+//Help section
+const helpButton = document.getElementById('helpButton');
+const helpWindow = document.getElementById('helpWindow');
+const helpText = document.getElementById('helpText');
+const closeHelp = document.getElementById("closeHelp");
+
 //Peek features
 const peekButton = document.getElementById('peek-button');
 const peekWindow = document.getElementById('peek-window');
@@ -170,7 +176,12 @@ paraphraseButton.addEventListener('click', () => {
         paraphraseContainer.innerText = getRandomParaphrase(currentVerse);
     }
     else {
-        themeContainer.innerText = "Themes: " + getThemes(currentVerse);
+        if(themeContainer.innerText === '') {
+            themeContainer.innerText = "Themes: " + getThemes(currentVerse);
+        }
+        else {
+            themeContainer.innerText = '';
+        }
     }
 });
 
@@ -198,6 +209,14 @@ closePeekButton.addEventListener('click', () => {
     peekWindow.style.display = 'none';
 });
 
+//If help button is clicked
+helpButton.addEventListener('click', () => {
+    helpWindow.style.display = 'block';
+});
+
+closeHelp.addEventListener('click',()=> {
+    helpWindow.style.display = 'none';
+});
 
 //If user clicks redo button, they start a new session
 redoButton.addEventListener('click', () => {
