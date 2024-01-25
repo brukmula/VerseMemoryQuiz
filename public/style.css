@@ -76,6 +76,11 @@ body {
     border-color: #fff;
     background-color: #fff;
     font-size: medium;
+    color: black;
+    clear: right;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .changeMode:hover {
@@ -180,6 +185,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     z-index: 1;
     overflow: auto; /* Changed to 'auto' for cleaner appearance */
+    font-family: Aria, sans-serif;
 }
 
 
