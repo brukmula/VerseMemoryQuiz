@@ -16,7 +16,6 @@ const themeContainer = document.getElementById('themes');
 //Help section
 const helpButton = document.getElementById('helpButton');
 const helpWindow = document.getElementById('helpWindow');
-const helpText = document.getElementById('helpText');
 const closeHelp = document.getElementById("closeHelp");
 
 //Peek features
@@ -162,7 +161,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
