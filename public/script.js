@@ -12,6 +12,7 @@ const scoreDisplay = document.getElementById('scoreDisplay');
 const changeMode = document.getElementById('changeMode');
 const boxTitle = document.getElementById('paraphraseBoxTitle');
 const themeContainer = document.getElementById('themes');
+const fuzzSwitch = document.getElementById('fuzzSwitch');
 
 //Help section
 const helpButton = document.getElementById('helpButton');
@@ -34,6 +35,8 @@ let verseRef = 'esv'; // Keep track of 8 digit reference from json and set it to
 let showCurrentScore = true; //By default, show current score
 let currentScore = 0; //Keep track of current score
 let currentMode = false; //If current mode is false, show paraphrase else show verse
+let fuzzyScore = false; //This variable determines whether to check all translations or not. Default is to check
+let versions = ['esv','niv', 'kjv','nlt','net']; //Store all the versions of the bible into an array
 
 //Receive difficulty level from user
 difficultySelect.addEventListener('change', () => {
@@ -67,6 +70,7 @@ function getRandomParaphrase(verse){
     return paraphrases[randomIndex];
 }
 
+//Retrieve themes of verse
 function getThemes(verse){
     return verse.themes;
 }
@@ -132,7 +136,6 @@ function calculatePrecision(translatedNgrams, referenceNgrams){
     return total > 0 ? count/total :0;
 }
 
-
 //Calculate similarity using BLEU score method
 function calculateSimilarity(userInput, referenceVerse) {
     let tokenizedInput = tokenize(userInput);
@@ -161,7 +164,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
@@ -206,6 +209,12 @@ peekButton.addEventListener('click', () => {
         peekWindow.style.display = 'block';
     }
 });
+
+//If fuzz switch is turned on check all translation
+fuzzSwitch.addEventListener('change', () => {
+    //Switch from true to false
+    fuzzyScore = fuzzyScore !== true;
+})
 
 closePeekButton.addEventListener('click', () => {
     //Close the peek window
@@ -269,8 +278,22 @@ changeMode.addEventListener('click', () => {
 //Wait for user to check if they are correct
 userInput.addEventListener('input', () => {
     const userAnswer = userInput.value.trim();
-    const similarityPercentage = calculateSimilarity(userAnswer, verseText);
-    currentScore = similarityPercentage;
+
+    //If fuzzy score is on, compare all versions
+    if(fuzzyScore === true){
+        let highest = []
+        versions.forEach((version, index, array) => {
+            let versionScore =currentVerse[version];
+            highest.push(calculateSimilarity(userAnswer, versionScore));
+        })
+        currentScore = Math.max(...highest);
+    }
+
+    //If fuzzy score is off, only compare to selected version
+    else {
+        const similarityPercentage = calculateSimilarity(userAnswer, verseText);
+        currentScore = similarityPercentage;
+    }
 
     //Update current score
     if(showCurrentScore === true){
@@ -278,11 +301,11 @@ userInput.addEventListener('input', () => {
     }
 
     //Check if user correct percentage is greater than or equal to selected difficulty
-    if(similarityPercentage >= currentDifficulty){
+    if(currentScore >= currentDifficulty){
         verseContainer.textContent =   verseId +  ': '  +verseText;
         resultContainer.textContent = 'Correct!'
     }
-    else if(similarityPercentage < currentDifficulty){
+    else if(currentScore < currentDifficulty){
         verseContainer.textContent = '';
     }
 

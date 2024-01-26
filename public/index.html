@@ -8,7 +8,7 @@
 <body>
 <div id = "game-container">
     <h1 class = "intro">Verse Memory Quiz</h1>
-        <label class = "diff" for="difficulty">Difficulty: </label>
+    <label class = "diff" for="difficulty"><b>Difficulty:</b> </label>
         <select id = "difficulty" class = "dropdown">
             <option value = "none" selected = "selected" hidden>Select Difficulty</option>
             <option value = "100" >100% (Exact)</option>
@@ -26,8 +26,12 @@
         <option value = "nlt">NLT</option>
     </select>
 
-    <div>
+    <div class = "switch_container">
         <button id ="changeMode" class = "changeMode">Change Game Mode</button>
+        <b class = "diff">Fuzzy: </b> <label class="switch">
+            <input id = "fuzzSwitch" type="checkbox">
+            <span class="slider"></span>
+        </label>
         <button id ="helpButton" class = "helpButton">Help</button>
     </div>
 
@@ -105,7 +109,7 @@
 
         <p>
             <button class="helpOtherButtons">Themes</button>
-            lets you see your score as you themes of a verse when the game is set to verse reference mode.
+            displays hints when the user has selected Verse Reference Mode. Specifically themes from each verse.
         </p>
 
         <button id ="closeHelp">Close</button>

@@ -148,7 +148,7 @@ body {
     background-color: #fff;
     cursor: pointer;
     position: relative;
-    left: 400px;
+    left: 300px;
 }
 
 .helpButton:hover{
@@ -256,6 +256,59 @@ body {
 
 .result {
     color: #fff;
+}
+
+/* Styling for the smaller switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Reduced width */
+    height: 22px; /* Reduced height */
+}
+
+/* Hide the default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Smaller slider styling */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 22px; /* Adjusted for smaller height */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px; /* Smaller height for the circle */
+    width: 18px; /* Smaller width for the circle */
+    left: 2px; /* Adjusted position */
+    bottom: 2px; /* Adjusted position */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Adjusted color and position for when the switch is checked */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px); /* Adjusted translation */
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
 }
 
 .showThemes {
