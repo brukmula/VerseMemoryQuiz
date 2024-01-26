@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="public/style.css">
+<link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <title>Bible Verse Quiz </title>
@@ -45,7 +45,7 @@
     <div class = "box">
         <p class = "box-title">
             Enter Your Answer
-            <button id = "scoreButton" class = "scoreButton">Show Score</button>
+            <button id = "scoreButton" class = "scoreButton">Hide Score</button>
         <p id = "scoreDisplay"></p>
         </p>
         <textarea id = "user-input" oninput="resizeTextArea()" class = "box-input" placeholder="Enter the verse"></textarea>
@@ -63,9 +63,10 @@
 
         <h2>How to play:</h2>
 
-        <p>The game generates a paraphrase for you, in the white box under the
-        <b>Enter Your Answer</b> title is where you enter your guess for the original verse.
-        </p>
+        <p>The game generates a paraphrase for you in the box labeled <b>Paraphrases</b>.</p>
+        <p>The <b>Enter Your Answer</b> box is where you enter your guess for the original verse.</p>
+
+        <p>If you reach the target goal the verse will appear in the  <b>Completed Verse</b> box</p>
 
         <p>
         <select class="dropdown">Select Difficulty
@@ -89,12 +90,17 @@
 
         <p>
             <button class="helpOtherButtons">Change Game Mode</button>
-            changes the game from Paraphrase Mode to Verse Reference Mode.
+            changes the game from Paraphrase Mode to Verse Reference Mode and vice versa. This button can be used at any time without changing the score, even in the middle of a guess.
         </p>
 
         <p>
-            <button class="helpOtherButtons">Show Score</button>
-            lets you see your score as you type, to turn off click again.
+            <button class="helpOtherButtons">Hide Score</button>
+            lets you see your score as you type, click to turn on or off.
+        </p>
+
+        <p>
+            <button class="helpOtherButtons">Themes</button>
+            will display hints when in verse reference mode, specifically themes from the verse.
         </p>
 
         <button id ="closeHelp">Close</button>
@@ -106,6 +112,6 @@
     </div>
 </div>
 
-<script src="public/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

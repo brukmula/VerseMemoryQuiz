@@ -31,7 +31,7 @@ let verseId; // Store the verses reference
 let currentDifficulty = 50; //Default difficulty is 50%
 let peekUsed = false; //Track if the peek feature has been used
 let verseRef = 'esv'; // Keep track of 8 digit reference from json and set it to esv by default
-let showCurrentScore = false; //By default, don't show current score
+let showCurrentScore = true; //By default, show current score
 let currentScore = 0; //Keep track of current score
 let currentMode = false; //If current mode is false, show paraphrase else show verse
 
@@ -166,6 +166,10 @@ fetch('text.json')
     .then(data => {
         bibleData = data;
         displayVerse();
+        //Update current score
+        if(showCurrentScore === true){
+            scoreDisplay.innerText = 'Score: ' + currentScore + '%';
+        }
     })
     .catch(error => console.error('Error fetching data', error));
 
@@ -267,7 +271,6 @@ userInput.addEventListener('input', () => {
     const userAnswer = userInput.value.trim();
     const similarityPercentage = calculateSimilarity(userAnswer, verseText);
     currentScore = similarityPercentage;
-
 
     //Update current score
     if(showCurrentScore === true){
