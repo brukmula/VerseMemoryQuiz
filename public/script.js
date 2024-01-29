@@ -1,4 +1,4 @@
-//
+//Call id's from HTML
 const verseContainer = document.getElementById('verse');
 const paraphraseContainer = document.getElementById('paraphrase');
 const userInput = document.getElementById('user-input');
