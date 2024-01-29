@@ -7,34 +7,47 @@
 </head>
 <body>
 <div id = "game-container">
-    <h1 class = "intro">Verse Memory Quiz</h1>
-    <label class = "diff" for="difficulty"><b>Difficulty:</b> </label>
+    <h1 id = "logo" class = "intro">Verse Memory Quiz</h1>
+    <div>
+        <label id="languageText" class="diff" for ="language"><b>Language</b></label>
+        <select id = "language" class = "dropdown">
+            <option value="english">English</option>
+            <option value="chinese">中国人</option>
+        </select>
+    </div>
+
+    <div>
+        <label class = "diff" for="difficulty"><b id="difficultyText">Difficulty:</b> </label>
         <select id = "difficulty" class = "dropdown">
-            <option value = "none" selected = "selected" hidden>Select Difficulty</option>
+            <option id = "difficultySelect" value = "none" selected = "selected" hidden>Select Difficulty</option>
             <option value = "100" >100% (Exact)</option>
             <option value = "75">75%</option>
             <option value = "50">50%</option>
             <option value = "25">25%</option>
             <option value = "10">10%</option>
         </select>
-    <select id = "versionSelect" class = "dropdown">
-        <option value = "none" selected = "selected" hidden>Select Version</option>
-        <option value = "esv" >ESV</option>
-        <option value = "kjv">KJV</option>
-        <option value = "net">NET</option>
-        <option value = "niv">NIV</option>
-        <option value = "nlt">NLT</option>
-    </select>
+        <select id = "versionSelect" class = "dropdown">
+            <option id = "selectVersion" value = "none" selected = "selected" hidden>Select Version</option>
+            <option value = "esv" >ESV</option>
+            <option value = "kjv">KJV</option>
+            <option value = "net">NET</option>
+            <option value = "niv">NIV</option>
+            <option value = "nlt">NLT</option>
+        </select>
+    </div>
+
 
     <div class = "switch_container">
-        <button id ="changeMode" class = "changeMode">Change Game Mode</button>
-        <b class = "diff">Fuzzy: </b> <label class="switch">
+        <button id ="changeMode" class = "changeMode"><b id = "gameText">Change Game Mode</b></button>
+        <b id = "fuzz" class = "diff">Fuzzy: </b> <label class="switch">
             <input id = "fuzzSwitch" type="checkbox">
             <span class="slider"></span>
         </label>
+        <button class = "tooltip"> ?
+            <span id = "toolTip" class="tooltipText">When fuzzy score is activated, your guess will be checked against all translations.</span>
+        </button>
         <button id ="helpButton" class = "helpButton">Help</button>
     </div>
-
 
     <div class = "box">
         <p>
@@ -47,7 +60,7 @@
         <button id ="newParaphrase" class = "newParaphrase">Other Paraphrase</button>
     </div>
     <div class = "box">
-        <p class = "box-title">
+        <p id = "answerText" class = "box-title">
             Enter Your Answer
             <button id = "scoreButton" class = "scoreButton">Hide Score</button>
         <p id = "scoreDisplay"></p>
@@ -55,7 +68,7 @@
         <textarea id = "user-input" oninput="resizeTextArea()" class = "box-input" placeholder="Enter the verse"></textarea>
     </div>
     <div class = "box">
-        <p class = "box-title"> Completed Verse</p>
+        <p id = "completedVerse" class = "box-title"> Completed Verse</p>
         <p id = "verse" class ="box-content"></p>
     </div>
     <p id ="result" class="result">Result: </p>
@@ -71,6 +84,10 @@
         <p>The <b>Enter Your Answer</b> box is where you enter your guess for the original verse.</p>
 
         <p>If you reach the target goal the verse will appear in the  <b>Completed Verse</b> box</p>
+
+        <p>The game can also be played in <b>Verse Reference</b> mode. In this mode the game will only display the verses
+        reference without displaying the paraphrases.
+        </p>
 
         <p>
         <select class="dropdown">Select Difficulty
@@ -94,22 +111,29 @@
 
         <p>
             <button class="helpOtherButtons">Change Game Mode</button>
-            changes the game from Paraphrase Mode to Verse Reference Mode and vice versa. This button can be used at any time without changing the score, even in the middle of a guess.
-        </p>
-
-        <p>
-            <button class="helpOtherButtons">Hide Score</button>
-            lets you see your score as you type, click to turn on or off.
+            changes the game from <b>Paraphrase</b> mode to <b>Verse Reference</b> mode and vice versa.
+            This button can be used at any time without changing the score, even in the middle of a guess or
+            after pressing check verse.
         </p>
 
         <p>
             <button class="helpOtherButtons">Themes</button>
-            will display hints when in verse reference mode, specifically themes from the verse.
+            will display hints when in <b>Verse Reference</b>, mode specifically themes from the verse.
+        </p>
+
+        <p>
+            <button class="helpOtherButtons">Other Paraphrases</button>
+            lets you cycle through different paraphrases of selected verse.
         </p>
 
         <p>
             <button class="helpOtherButtons">Themes</button>
             displays hints when the user has selected Verse Reference Mode. Specifically themes from each verse.
+        </p>
+
+        <p>
+            <button class="helpOtherButtons">Hide Score</button>
+            lets you see your score as you type, click to turn on or off.
         </p>
 
         <button id ="closeHelp">Close</button>
@@ -122,5 +146,6 @@
 </div>
 
 <script src="script.js"></script>
+<script src="languageScript.js"></script>
 </body>
 </html>
