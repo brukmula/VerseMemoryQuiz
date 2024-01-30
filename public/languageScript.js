@@ -19,16 +19,21 @@ const completedVerseText = document.getElementById('completedVerse');
 
 //If language is changed, change contents of game to that language
 languageSelected.addEventListener('change', () => {
-    if(languageSelected.value === 'chinese'){
-        chinese();
-    }
-    else if(languageSelected.value === 'english'){
-        english();
+    switch (languageSelected.value){
+        case "english":
+            english();
+            break;
+        case "chinese":
+            chinese();
+            break;
+        case "amharic":
+            amharic();
+            break;
+        case "spanish":
+            spanish();
+            break;
     }
 
-    else if(languageSelected.value === 'amharic'){
-        amharic();
-    }
 });
 
 //Change app text to english
@@ -82,4 +87,21 @@ function amharic(){
     newVerseText.innerText = 'New Verse';
     paraphraseButtonText.innerText = 'Other Paraphrase';
     completedVerseText.innerText = 'Completed Verse';
+}
+
+function spanish(){
+    logo.innerText = 'Prueba de Memoria de Versos';
+    difficultyText.innerText = 'Dificultad: ';
+    selectDifficultyText.innerText = 'Seleccione dificultad:';
+    selectVersionText.innerText = 'Seleccionar versión';
+    gameText.innerText = 'Cambiar modo de juego'
+    fuzzText.innerText = 'Redondo:'
+    tootTipText.innerText = 'Cuando se activa la ronda, su suposición se comparará con todas las traducciones.'
+    helpText.innerText = 'Ayuda';
+    paraphraseTitleText.innerText = 'Paráfrasis';
+    answerText.innerText = 'Ingrese su respuesta';
+    checkVerseText.innerText = 'Comprobar Verso';
+    newVerseText.innerText = 'Nuevo Verso';
+    paraphraseButtonText.innerText = 'Otra parafrasis';
+    completedVerseText.innerText = 'Verso completado';
 }

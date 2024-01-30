@@ -98,7 +98,7 @@ function getRandomParaphrase(verse){
     }
 
     const randomIndex = Math.floor(Math.random() * paraphrases.length);
-    return paraphrases[randomIndex];
+    return paraphrases[randomIndex].trim();
 }
 
 //Retrieve themes of verse
@@ -220,7 +220,7 @@ async function calculateBLEUScore(candidateText, referenceText) {
 }
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
