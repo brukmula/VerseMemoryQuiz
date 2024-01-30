@@ -1,4 +1,6 @@
 # Welcome to Verse Memory Quiz!
+The game can be accessed at: https://brukmula.github.io/VerseMemoryQuiz/
+
 
 This is a game designed to test your memory skills with Bible verses! 
 
