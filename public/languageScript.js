@@ -4,6 +4,7 @@ const logo = document.getElementById('logo');
 const languageSelected = document.getElementById('language');
 const difficultyText = document.getElementById('difficultyText');
 const selectDifficultyText = document.getElementById('difficultySelect');
+const versionText = document.getElementById('verseText');
 const selectVersionText = document.getElementById('selectVersion');
 const gameText = document.getElementById('gameText');
 const fuzzText = document.getElementById('fuzz');
@@ -23,6 +24,10 @@ languageSelected.addEventListener('change', () => {
     }
     else if(languageSelected.value === 'english'){
         english();
+    }
+
+    else if(languageSelected.value === 'amharic'){
+        amharic();
     }
 });
 
@@ -48,16 +53,33 @@ function english(){
 function chinese(){
     logo.innerText = '圣经经文记忆测验';
     difficultyText.innerText = '困难';
-    selectDifficultyText.innerText = '选择难度'
+    selectDifficultyText.innerText = '选择难度';
     selectVersionText.innerText = '选择版本';
     gameText.innerText = '改变游戏模式';
     fuzzText.innerText = '回合分数'
     tootTipText.innerText = '当回合计分被激活时，您的猜测将与所有翻译进行检查。';
-    helpText.innerText = '指示';
+    helpText.innerText = '帮助';
     paraphraseTitleText.innerText = '释义';
     answerText.innerText = '输入您的答案';
     checkVerseText.innerText = '检查圣经经文';
     newVerseText.innerText = '新的圣经经文'
     paraphraseButtonText.innerText = '其他释义';
     completedVerseText.innerText = '完整圣经经文';
+}
+
+function amharic(){
+    logo.innerText = 'የመጽሐፍ ቅዱስ ትውስታ ጨዋታ';
+    difficultyText.innerText = 'ክህሎት';
+    selectDifficultyText.innerText = 'የክህሎት ደረጃ';
+    selectVersionText.innerText = 'ትርጉም ይምረጡ';
+    gameText.innerText = 'Change Game Mode'
+    fuzzText.innerText = 'Fuzzy:'
+    tootTipText.innerText = 'When fuzzy score is activated, your guess will be checked against all translations.'
+    helpText.innerText = 'እርዳታ';
+    paraphraseTitleText.innerText = 'ገለጻ';
+    answerText.innerText = 'መልሱን እዚህ ያስገቡ';
+    checkVerseText.innerText = 'Check Verse';
+    newVerseText.innerText = 'New Verse';
+    paraphraseButtonText.innerText = 'Other Paraphrase';
+    completedVerseText.innerText = 'Completed Verse';
 }

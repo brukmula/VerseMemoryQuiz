@@ -1,3 +1,4 @@
+
 //Call id's from HTML
 const verseContainer = document.getElementById('verse');
 const paraphraseContainer = document.getElementById('paraphrase');
@@ -13,6 +14,7 @@ const changeMode = document.getElementById('changeMode');
 const boxTitle = document.getElementById('paraphraseBoxTitle');
 const themeContainer = document.getElementById('themes');
 const fuzzSwitch = document.getElementById('fuzzSwitch');
+const languageSelect = document.getElementById('language');
 
 //Help section
 const helpButton = document.getElementById('helpButton');
@@ -25,6 +27,7 @@ const peekWindow = document.getElementById('peek-window');
 const peekVerse = document.getElementById('peek-verse');
 const closePeekButton = document.getElementById('close-peek-button');
 
+let currentLanguage = 'english';
 let bibleData; //Variable to keep track of data from JSON file
 let currentVerse; //Store current verse JSON reference
 let verseText; // Verse content
@@ -37,6 +40,21 @@ let currentScore = 0; //Keep track of current score
 let currentMode = false; //If current mode is false, show paraphrase else show verse
 let fuzzyScore = false; //This variable determines whether to check all translations or not. Default is to check
 let versions = ['esv','niv', 'kjv','nlt','net']; //Store all the versions of the bible into an array
+
+languageSelect.addEventListener('change', () =>{
+    //Change to chinese
+    if(languageSelect.value === 'chinese'){
+        currentLanguage = 'chinese';
+        displayVerse();
+    }
+
+    //change to english
+    else if (languageSelect.value === 'english'){
+        currentLanguage = 'english';
+        displayVerse();
+    }
+})
+
 
 //Receive difficulty level from user
 difficultySelect.addEventListener('change', () => {
@@ -65,7 +83,17 @@ function getRandomVerse(){
 
 //Function to retrieve random paraphrase of selected verse
 function getRandomParaphrase(verse){
-    const paraphrases = verse.paraphrases;
+
+    let paraphrases;
+
+    if(currentLanguage === 'english'){
+        paraphrases = verse.paraphrases;
+    }
+
+    if(currentLanguage === 'chinese'){
+        paraphrases = verse.chineseParaphrases;
+    }
+
     const randomIndex = Math.floor(Math.random() * paraphrases.length);
     return paraphrases[randomIndex];
 }
@@ -81,8 +109,13 @@ function displayVerse(){
 
     currentVerse = randomVerse;
     verseText = randomVerse[verseRef];
-    verseId = randomVerse.verse;
 
+    if(currentLanguage === 'english') {
+        verseId = randomVerse.verse;
+    }
+    else if(currentLanguage === 'chinese'){
+        verseId = randomVerse.chinese;
+    }
     //If user is playing on paraphrase mode
     if(currentMode === false) {
         paraphraseContainer.textContent = randomParaphrase;
@@ -164,7 +197,7 @@ function calculateSimilarity(userInput, referenceVerse) {
 
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
@@ -262,9 +295,16 @@ changeMode.addEventListener('click', () => {
     //If paraphrase mode is on change to verse mode
     if(currentMode === false) {
         currentMode = true;
-        boxTitle.innerText = "Verse Reference";
-        paraphraseContainer.innerText = verseId;
-        paraphraseButton.innerText = "Themes";
+
+        if(currentLanguage === 'english') {
+            boxTitle.innerText = "Verse Reference";
+            paraphraseContainer.innerText = verseId;
+            paraphraseButton.innerText = "Themes";
+        }
+        else if(currentLanguage === 'chinese') {
+            boxTitle.innerText = "Verse Reference";
+            paraphraseButton.innerText = "Themes";
+        }
     }
     else{
         currentMode = false;
@@ -275,38 +315,57 @@ changeMode.addEventListener('click', () => {
     }
 })
 
-//Wait for user to check if they are correct
+//While user is typing check score
 userInput.addEventListener('input', () => {
     const userAnswer = userInput.value.trim();
 
-    //If fuzzy score is on, compare all versions
-    if(fuzzyScore === true){
-        let highest = []
-        versions.forEach((version, index, array) => {
-            let versionScore =currentVerse[version];
-            highest.push(calculateSimilarity(userAnswer, versionScore));
-        })
-        currentScore = Math.max(...highest);
+    //Check score when in english
+    if (currentLanguage === 'english') {
+        //If fuzzy score is on, compare all versions
+        if (fuzzyScore === true) {
+            let highest = []
+            versions.forEach((version, index, array) => {
+                let versionScore = currentVerse[version];
+                highest.push(calculateSimilarity(userAnswer, versionScore));
+            })
+            currentScore = Math.max(...highest);
+        }
+
+        //If fuzzy score is off, only compare to selected version
+        else {
+            const similarityPercentage = calculateSimilarity(userAnswer, verseText);
+            currentScore = similarityPercentage;
+        }
+
+        //Update current score
+        if (showCurrentScore === true) {
+            scoreDisplay.innerText = 'Score: ' + currentScore + '%';
+        }
+
+        //Check if user correct percentage is greater than or equal to selected difficulty
+        if (currentScore >= currentDifficulty) {
+            verseContainer.textContent = verseId + ': ' + verseText;
+            resultContainer.textContent = 'Correct!'
+        } else if (currentScore < currentDifficulty) {
+            verseContainer.textContent = '';
+        }
     }
 
-    //If fuzzy score is off, only compare to selected version
-    else {
-        const similarityPercentage = calculateSimilarity(userAnswer, verseText);
-        currentScore = similarityPercentage;
-    }
+    if(currentLanguage === 'chinese'){
 
-    //Update current score
-    if(showCurrentScore === true){
-        scoreDisplay.innerText = 'Score: ' + currentScore + '%';
-    }
+        currentScore = calculateSimilarity(userInput,verseText);
 
-    //Check if user correct percentage is greater than or equal to selected difficulty
-    if(currentScore >= currentDifficulty){
-        verseContainer.textContent =   verseId +  ': '  +verseText;
-        resultContainer.textContent = 'Correct!'
-    }
-    else if(currentScore < currentDifficulty){
-        verseContainer.textContent = '';
-    }
+        //Update current score
+        if (showCurrentScore === true) {
+            scoreDisplay.innerText = '分数: ' + currentScore + '%';
+        }
 
+        //Check if user correct percentage is greater than or equal to selected difficulty
+        if (currentScore >= currentDifficulty) {
+            verseContainer.textContent = verseId + ': ' + verseText;
+            resultContainer.textContent = '正确的!';
+        } else if (currentScore < currentDifficulty) {
+            verseContainer.textContent = '';
+        }
+    }
 });

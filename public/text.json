@@ -7,12 +7,19 @@
       "niv": " In the beginning God created the heavens and the earth.",
       "nlt": " In the beginning God created the heavens and the earth.",
       "kjv": " In the beginning God created the heaven and the earth.",
+      "chinese": "起初 ， 神 创造 天地 。",
       "paraphrases":[
         "At the start, the heavens and the earth were brought into existence by God.",
         "At the start of everything, the heavens and the earth were brought into existence by God.",
         "At the start, the heavens and the earth were created by God.",
         "God made the heavens and the earth at the start."
         ],
+      "chineseParaphrases": [
+        "最开始，宇宙由神所创。",
+        "一开始，神是创造天与地的。",
+        "在初始时，天地是由神来创造的。",
+        "起初的时候，天和地是神创造出来的。"
+      ],
       "themes": ["Creation", "Beginning", "God's Power"]
     },
     {
@@ -23,11 +30,18 @@
       "nlt": " So God created human beings in his own image. In the image of God he created them; male and female he created them.",
       "kjv": " So God created man in his own image, in the image of God created he him; male and female created he them.",
       "net": " God created humankind in his own image, in the image of God he created them, male and female he created them.",
+      "chinese": "于是 ， 神 照着 自己 的 形象 创造 人 ； 就是 照着 神 的 形象 创造 了 他 ； 他 所 创造 的 有 男 有 女 。",
       "paraphrases": [
         "God made humans in his own likeness, both male and female.",
         "In the likeness of God, humans were brought forth, both male and female.",
         "Humans were made by God to bear his likeness, both male and female.",
         "God made human beings in his likeness - both male and female."
+      ],
+      "chineseParaphrases": [
+        "因此，上帝按照自己的形象创造了人类；确切地说，是依照上帝的形象来创造的；他创造的人包括男性和女性",
+        "于是，按照神自身的形象，神造了人；就是按照他的形象；神造的人中既有男性也有女性",
+        "因此，神根据自己的形象创造了人类，即是依据神的形象来创造；他所创造的包含男性和女性。",
+        "神依照自己的形象创造了人；也就是说，根据神的形象创造了人；他创造的人既有男性也有女性。"
       ],
       "themes": ["Creation of Mankind", "Image of God", "Man and Woman"]
     },
@@ -40,11 +54,18 @@
       "nlt": " This explains why a man leaves his father and mother and is joined to his wife, and the two are united into one.",
       "kjv": " Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
       "net": " That is why a man leaves his father and mother and unites with his wife, and they become a new family.",
+      "chinese": "因此 人 要 离开 父母 ， 和 妻子 连合 ， 二 人 成为 一体 。",
       "paraphrases": [
         "As a result, a husband must leave his parents and cling to his wife, and they will become one body.",
         "Thus, a man is required to abandon his parents and cling to his spouse, becoming united as one entity.",
         "As a result, a male individual will depart from his parents and cling to his spouse, and they will unite as one entity.",
         "Hence, a man will depart from his parents and cling to his spouse, and they will become united as one."
+      ],
+      "chineseParaphrases": [
+        "因此，一个人将离开他的父母，与他的妻子结合，共同形成一个整体。",
+        "所以人要和父母告别，与妻子结成连理，两人融为一体。",
+        "人应当离开他的父母，与妻子结合，两人合而为一。\n",
+        "人必须离开父母，与其妻子紧密相连，两人共成一体"
       ],
       "themes": ["Marriage", "Unity", "Leaving Family"]
     },
@@ -56,12 +77,19 @@
       "niv": " “I will make you into a great nation, and I will bless you; I will make your name great, and you will be a blessing.",
       "nlt": " I will make you into a great nation. I will bless you and make you famous, and you will be a blessing to others.",
       "kjv": " And I will make of thee a great nation, and I will bless thee, and make thy name great; and thou shalt be a blessing:",
+      "chinese":  "我 必 使 你 成为 大国 ， 赐福 给 你 ， 使 你 的 名 为大 ， 你 也 必 使 别人 得 福 ，",
       "net": " Then I will make you into a great nation, and I will bless you, and I will make your name great, so that you will exemplify divine blessing.",
       "paraphrases": [
         "The speaker promises to transform the listener into a prominent nation and bestow blessings upon them, making their name renowned and ensuring they become a source of good fortune.",
         "God promised to turn you into a prominent nation, bless you, and make your name renowned, causing you to bless others.",
         "God promises to transform you into a prosperous nation and bless you with a great reputation, thus allowing you to also bless others.",
         "God promises to transform you into a thriving nation and bless you immensely, elevating your reputation to the point where you'll become a source of blessing for others."
+      ],
+      "chineseParaphrases": [
+        "我将让你成为一个强大的国家，祝福你，使你名声显赫，并且你也将成为他人的祝福。",
+        "我要使你成为伟大的国家，赋予你福气，使你的名声远扬，你也将给他人带来福分。",
+        "我定将你打造成一个强大的国家，赐予你众多祝福，提升你的名望，并使你成为他人的福源。",
+        "我必确保你成为一个盛大的国度，为你带来祝福，使你的名誉卓著，并让你成为他人的福祉。"
       ],
       "themes": ["Blessing", "Nation Building", "God's Promise"]
     },
@@ -74,11 +102,18 @@
       "nlt": " And Abram believed the Lord, and the Lord counted him as righteous because of his faith.",
       "kjv": " And he believed in the Lord; and he counted it to him for righteousness.",
       "net": " Abram believed the Lord, and the Lord considered his response of faith as proof of genuine loyalty.",
+      "chinese": "亚伯兰 信 耶和华 ， 耶和华 就 以 此 算为 他 的 义 了 。",
       "paraphrases": [
         "He trusted in the Lord, and as a result, the Lord considered him righteous.",
         "The individual trusted in the Lord, and as a result, he was considered righteous.",
         "The man had faith in the Lord, and this was recognized as righteousness.",
         "The man had faith in the Lord, and that was considered to be righteous behavior."
+      ],
+      "chineseParaphrases": [
+        "亚伯兰对耶和华的信仰被耶和华视为他的正义。",
+        "亚伯兰坚信耶和华，而耶和华认为这是他的正直之举。",
+        "亚伯兰对耶和华的信念，被耶和华认作是他的公义。",
+        "亚伯兰对耶和华的坚定信仰，被耶和华视为其正义的表现。"
       ],
       "themes": ["Belief", "Faith", "Righteousness"]
     },
@@ -91,11 +126,18 @@
       "nlt": " You intended to harm me, but God intended it all for good. He brought me to this position so I could save the lives of many people.",
       "kjv": " But as for you, ye thought evil against me; but God meant it unto good, to bring to pass, as it is this day, to save much people alive.",
       "net": " As for you, you meant to harm me, but God intended it for a good purpose, so he could preserve the lives of many people, as you can see this day.",
+      "chinese": "从前 你们 有意 要 害 我 ， 但 神 有 美好 的 意思 在 其中 ， 为要 成就 今日 的 光景 ， 使 许多 人 的 性命 得以 保全 。",
       "paraphrases": [
         "Regarding you, your intention was to do harm to me, but God intended it for good, and as a result, many individuals are still alive today.",
         "You had bad intentions towards me, but God turned the situation into a positive one and allowed many people to stay alive because of it.",
         "You intended to harm me, but God intended it for good so that many people could live, which they continue to do so today.",
         "You had bad intentions towards me, however, God turned it around for the greater good, ensuring that many individuals survive even to this day."
+      ],
+      "chineseParaphrases": [
+        "以前你们对我有恶意，但上帝在其中有其美好的计划，为了今天的情况，保全了众多人的生命。",
+        "虽然你们曾经想伤害我，但是上帝有他的美意，通过这一切来成就现在的这个局面，拯救了很多人的生命。",
+        "你们曾有意加害于我，但神的美好旨意却在这其中，为了造就现在这种情况，从而让很多人得到生命的拯救。",
+        "你们过去想要伤害我，但神却有更好的计划涵盖其中，目的是为了实现今天的这个情况，以便挽救许多人的生命。"
       ],
       "themes": ["God's Plan", "Overcoming Evil", "Preservation of Life"]
     },
@@ -108,11 +150,18 @@
       "nlt": " God replied to Moses, “I Am Who I Am. Say this to the people of Israel: I Am has sent me to you.”",
       "kjv": " And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.",
       "net": " God said to Moses, “I AM that I AM.” And he said, “You must say this to the Israelites, ‘I AM has sent me to you.’”",
+      "chinese": "神 回答 摩西 ： “ 我 是 ‘ 自 有 永 有 者 ’ 。 ” 又 说 ： “ 你 要 对 以色列人 这样 说 ： ‘ 那 自 有 者 派 我 到 你们 这里 来 。'",
       "paraphrases": [
         "Moses was told by God to inform the Israelites that \"I am\" has sent him.",
         "Moses reported that God instructed him to tell the people of Israel that it was \"I am\" who sent him.",
         "Moses was told by God that he should inform the Israelites that \"I am\" had sent him.",
         "Instructed by God, Moses told the Israelites that their messenger was \"I am\" when he revealed Himself by saying \"I am who I am.\""
+      ],
+      "chineseParaphrases": [
+        "神 对 摩西 说：“我 就是 ‘永恒不变的存在’。” 并 补充 说：“你 告诉 以色列人：‘永恒的存在者 差遣 我 来到 你们 中间。’”",
+        "神 向 摩西 表示：“我 是 ‘永远存在的一位’。” 然后 指示：“对 以色列人 这么 说：‘那位 永远存在的 已 经 派 我 来 到 你们 这里。’”",
+        "神 对 摩西 说：“我 就是 ‘始终存在者’。” 接着 说道：“要 对 以色列民族 说：‘始终存在的神 送 我 来 这里。’”",
+        "神 告诉 摩西：“我 是 ‘不变的存在’。” 并 指出：“要 向 以色列人 宣告：‘不变的存在者 命我 来到 你们当中。’”"
       ],
       "themes": ["Divine Self-Existence", "God's Identity", "Messianic Prophecy"]
     },
@@ -125,11 +174,18 @@
       "nlt": " The Lord himself will fight for you. Just stay calm.”",
       "kjv": " The Lord shall fight for you, and ye shall hold your peace.",
       "net": " The Lord will fight for you, and you can be still.”",
+      "chinese": "耶和华 必 为 你们 争战 ， 你们 必须 安静 ， 不要 作声 。 ”",
       "paraphrases": [
         "God will battle on your behalf, and you simply need to remain quiet.",
         "God will take up the battle on your behalf, and all you need to do is remain quiet.",
         "God will defend you, all you need to do is stay quiet.",
         "God will battle on your behalf and all you need to do is remain quiet."
+      ],
+      "chineseParaphrases": [
+        "耶和华将为你们战斗，而你们只需保持沉默，无需发出任何声响",
+        "你们无需担忧，因为耶和华将代你们应战，只要你们保持安静，不发一言。",
+        "耶和华将担任你们的战斗，你们只需要静静地不说话。",
+        "耶和华会为你们而战，你们的任务是保持寂静，无需说话。"
       ],
        "themes": ["God's Protection", "Tranquility", "Divine Intervention"]
     },
@@ -142,11 +198,18 @@
       "nlt": " The Lord is my shepherd; I have all that I need.",
       "kjv": " The Lord is my shepherd; I shall not want.",
       "net": " The Lord is my shepherd, I lack nothing.",
+      "chinese": "耶和华 是 我 的 牧人 ， 我 必 不 会 缺乏 。 （ 本 节 在 《 马索拉 文本 》 包括 细 字 标题 ）",
       "paraphrases": [
         "I do not lack anything because the Lord is my guide.",
         "The Shepherd is my guide and I will not desire anything else.",
         "I have no needs because the Lord takes care of me like a shepherd.",
         "The Lord is my guide and caretaker; I will not be lacking anything."
+      ],
+      "chineseParaphrases": [
+        "耶和华作为我的牧者，我将不会有所匮乏。（这句话包含在《马索拉文本》中，并带有详细的小标题）",
+        "因耶和华是我的羊倌，我绝不会感到缺少。（这部分内容在《马索拉文本》中以小字形式出现）",
+        "我不会缺少任何东西，因为耶和华是我的引导者。（在《马索拉文本》中，这一节带有细小的标题）",
+        "耶和华作我的牧养者，我不会遇到任何缺乏。（这一节在《马索拉文本》中有详细的小标题）"
       ],
        "themes": ["God as Shepherd", "Providence", "Contentment"]
     },
@@ -158,11 +221,18 @@
       "nlt": " “For this is how God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life.",
       "kjv": " For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
       "net": " For this is the way God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life.",
+      "chinese":"“ 神 爱 世人 ， 甚至 把 他 的 独生子 赐给 他们 ， 叫 一切 信 他 的 ， 不至 灭亡 ， 反 得 永生 。" ,
       "paraphrases":[
         "God loved the world so much that he offered his only son to grant everlasting life to anyone who believes in him and prevent them from perishing.",
         "God loved the world so much that he gave his only Son, so that anyone who has faith in him will have everlasting life and not die.",
         "God loved the world so much that he gave his one and only Son, so that anyone who believes in him would not die but have everlasting life.",
         "God loved the world so much that he sent his only son to save whoever believes in him from perishing and to give them eternal life."
+      ],
+      "chineseParaphrases": [
+        "上帝对人类的爱是如此深厚，以至于他将自己唯一的儿子赐予人们，让所有相信他的人都能够获得永恒的生命，而不是走向毁灭",
+        "神对世界的爱极为伟大，他甚至将他唯一的孩子赠与世人，以便让所有信仰他的人不会消亡，而是拥有永恒的生命。",
+        "天父对全人类的爱无比伟大，他甚至赐予了他的独子给他们，使得每一个信仰他的人都不会灭亡，而是得到了永生。",
+        "上天的爱对人类来说是无限的，神甚至把他的独生子送给了世人，这样所有信仰他的人都将不会遭到灭亡，反而能得到永生."
       ],
       "themes": ["God's Love", "Salvation", "Eternal Life"]
     },
@@ -174,11 +244,18 @@
       "nlt": " Don’t forget to show hospitality to strangers, for some who have done this have entertained angels without realizing it!",
       "kjv": " Be not forgetful to entertain strangers: for thereby some have entertained angels unawares.",
       "net": " Do not neglect hospitality, because through it some have entertained angels without knowing it.",
+      "chinese":"不要 忘 了 用 爱心 接待 人 ， 有人 就 是 这样 作 ， 在 无意 中 就 款待 了 天使 。" ,
       "paraphrases": [
         "It's essential to be hospitable to unfamiliar people since some may have entertained divine beings unknowingly.",
         "Do not forget to be hospitable to those whom you do not know, for some of them may be angels in disguise.",
         "It's important to be hospitable towards unfamiliar individuals, as some may unknowingly be divine beings.",
         "Make sure to be kind and welcoming to unfamiliar individuals, as some may unknowingly host celestial beings."
+      ],
+      "chineseParaphrases": [
+        "别忘记用爱心款待他人，有些人就是这么做的，在不经意间接待了天使。",
+        "记住用爱心招待他人，因为有人正是如此，在不知不觉中招待了天使。",
+        "用爱心迎接他人是不可忘记的，因为有些人就是这样，不经意地接纳了天使。",
+        "必须记得以爱心对待来访者，有的人就是这样做的，不自觉地就接待了天使。"
       ],
       "themes": ["Hospitality", "Angelic Encounters", "Kindness to Strangers"]
     },
@@ -190,11 +267,18 @@
       "nlt": " Dear brothers and sisters, when troubles of any kind come your way, consider it an opportunity for great joy.",
       "kjv": " My brethren, count it all joy when ye fall into divers temptations;",
       "net": " My brothers and sisters, consider it nothing but joy when you fall into all sorts of trials,",
+      "chinese": "我 的 弟兄们 ， 你们 遭遇 各种 试炼 的 时候 ， 都 要 看 为 喜乐 ；",
       "paraphrases": [
         "Rejoice in every difficulty that comes your way, dear siblings, because you are aware that going through challenging situations will strengthen your beliefs and determination. Embrace this growth and let it fully shape you into a mature and fulfilled person without anything missing.",
         "My fellow brethren, rejoice when you encounter different types of challenges because these tribulations will test your faith and build your perseverance. Allow your perseverance to have its intended effect, so that you can mature and become whole, lacking nothing.",
         "My brothers, rejoice when you face challenges of different types, because you are aware that they will help you develop strength in your beliefs. Endure through them, in order to reach completeness and perfectness, without any shortcomings.",
         "Brothers, when you face difficulties of different kinds, consider it a joy because through these challenges, your faith will be tested and you will become more persevering. Allow perseverance to grow and develop, so that you will become fully mature and lacking in nothing."
+      ],
+      "chineseParaphrases": [
+        "当你们面临各种挑战时，我的兄弟们，应该把它视为快乐的源泉。",
+        "我的弟兄们，当遇到各式各样的考验时，应当欣然接受并感到喜悦。",
+        "面对生活中的各种困难和试炼，我的兄弟们，应以欢喜的心态去面对。",
+        "在经历各种不同的挑战时，我的弟兄们，要把这些看作是快乐的机会。"
       ],
       "themes": ["Joy in Trials", "Perseverance", "Spiritual Maturity"]
     }
