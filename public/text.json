@@ -198,7 +198,7 @@
       "nlt": " The Lord is my shepherd; I have all that I need.",
       "kjv": " The Lord is my shepherd; I shall not want.",
       "net": " The Lord is my shepherd, I lack nothing.",
-      "chinese": "耶和华 是 我 的 牧人 ， 我 必 不 会 缺乏 。 （ 本 节 在 《 马索拉 文本 》 包括 细 字 标题 ）",
+      "chinese": "耶和华 是 我 的 牧人 ， 我 必 不 会 缺乏 。",
       "paraphrases": [
         "I do not lack anything because the Lord is my guide.",
         "The Shepherd is my guide and I will not desire anything else.",
@@ -206,10 +206,10 @@
         "The Lord is my guide and caretaker; I will not be lacking anything."
       ],
       "chineseParaphrases": [
-        "耶和华作为我的牧者，我将不会有所匮乏。（这句话包含在《马索拉文本》中，并带有详细的小标题）",
-        "因耶和华是我的羊倌，我绝不会感到缺少。（这部分内容在《马索拉文本》中以小字形式出现）",
-        "我不会缺少任何东西，因为耶和华是我的引导者。（在《马索拉文本》中，这一节带有细小的标题）",
-        "耶和华作我的牧养者，我不会遇到任何缺乏。（这一节在《马索拉文本》中有详细的小标题）"
+        "耶和华作为我的牧者，我将不会有所匮乏",
+        "因耶和华是我的羊倌，我绝不会感到缺少。",
+        "我不会缺少任何东西，因为耶和华是我的引导者.",
+        "耶和华作我的牧养者，我不会遇到任何缺乏。"
       ],
        "themes": ["God as Shepherd", "Providence", "Contentment"]
     },

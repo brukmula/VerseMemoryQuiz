@@ -1,4 +1,3 @@
-
 //Call id's from HTML
 const verseContainer = document.getElementById('verse');
 const paraphraseContainer = document.getElementById('paraphrase');
@@ -46,12 +45,16 @@ languageSelect.addEventListener('change', () =>{
     if(languageSelect.value === 'chinese'){
         currentLanguage = 'chinese';
         displayVerse();
+        scoreDisplay.innerText = '分数: 0%';
+        verseContainer.innerText = '';
     }
 
     //change to english
     else if (languageSelect.value === 'english'){
         currentLanguage = 'english';
         displayVerse();
+        scoreDisplay.innerText = 'Score 0%';
+        verseContainer.innerText = '';
     }
 })
 
@@ -108,13 +111,12 @@ function displayVerse(){
     const randomParaphrase = getRandomParaphrase(randomVerse);
 
     currentVerse = randomVerse;
-    verseText = randomVerse[verseRef];
 
     if(currentLanguage === 'english') {
-        verseId = randomVerse.verse;
+        verseText = randomVerse[verseRef];
     }
     else if(currentLanguage === 'chinese'){
-        verseId = randomVerse.chinese;
+        verseText = randomVerse.chinese;
     }
     //If user is playing on paraphrase mode
     if(currentMode === false) {
@@ -195,6 +197,27 @@ function calculateSimilarity(userInput, referenceVerse) {
     return Math.round(percentageScore + (100 - percentageScore) * (geometricMean*brevityPenalty));
 }
 
+//calculate bleu score for chinese
+async function calculateBLEUScore(candidateText, referenceText) {
+    try {
+        const response = await fetch('http://localhost:5000/calculate-bleu', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ candidate: candidateText, reference: referenceText })
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        return data.bleu_score;
+    } catch (error) {
+        console.error('Error calculating BLEU score:', error);
+    }
+}
 
 //Fetch JSON data asynchronously
 fetch('text.json')
@@ -351,9 +374,16 @@ userInput.addEventListener('input', () => {
         }
     }
 
-    if(currentLanguage === 'chinese'){
+    //Calculate bleu score differently for chinese
+    if(currentLanguage === 'chinese') {
+        calculateBLEUScore(userAnswer,verseText)
+            .then(score => currentScore = Math.round(score * 4));
 
-        currentScore = calculateSimilarity(userInput,verseText);
+        console.log(verseText);
+
+        calculateBLEUScore(userAnswer, verseText)
+            .then(score => console.log('BLEU Score:', score))
+            .catch(error => console.error('An error occurred:', error));
 
         //Update current score
         if (showCurrentScore === true) {
@@ -362,10 +392,12 @@ userInput.addEventListener('input', () => {
 
         //Check if user correct percentage is greater than or equal to selected difficulty
         if (currentScore >= currentDifficulty) {
-            verseContainer.textContent = verseId + ': ' + verseText;
-            resultContainer.textContent = '正确的!';
+            verseContainer.textContent = verseText;
+            resultContainer.textContent = 'Correct!'
         } else if (currentScore < currentDifficulty) {
             verseContainer.textContent = '';
         }
     }
+
+
 });
