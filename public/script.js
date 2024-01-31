@@ -122,6 +122,7 @@ function displayVerse(){
 
     if(currentLanguage === 'english') {
         verseText = randomVerse[verseRef];
+        verseId = randomVerse.verse;
     }
 
     //If it is chinese remove all the spaces and punctuations
