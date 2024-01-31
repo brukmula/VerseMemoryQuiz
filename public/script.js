@@ -26,6 +26,9 @@ const peekWindow = document.getElementById('peek-window');
 const peekVerse = document.getElementById('peek-verse');
 const closePeekButton = document.getElementById('close-peek-button');
 
+//Game container
+const gameContainer = document.getElementById('game-container');
+
 let currentLanguage = 'english';
 let bibleData; //Variable to keep track of data from JSON file
 let currentVerse; //Store current verse JSON reference
@@ -66,7 +69,12 @@ difficultySelect.addEventListener('change', () => {
     verseContainer.textContent = '';
     resultContainer.innerText = '';
     if(showCurrentScore === true) {
-        scoreDisplay.innerText = 'Score: '+ currentScore + '%';
+        if(currentLanguage === 'english') {
+            scoreDisplay.innerText = 'Score: ' + currentScore + '%';
+        }
+        if(currentLanguage === 'chinese'){
+            scoreDisplay.innerText = '分数: ' + currentScore + '%';
+        }
     }
 });
 
@@ -115,9 +123,12 @@ function displayVerse(){
     if(currentLanguage === 'english') {
         verseText = randomVerse[verseRef];
     }
+
+    //If it is chinese remove all the spaces and punctuations
     else if(currentLanguage === 'chinese'){
         verseText = randomVerse.chinese;
     }
+
     //If user is playing on paraphrase mode
     if(currentMode === false) {
         paraphraseContainer.textContent = randomParaphrase;
@@ -135,6 +146,14 @@ function resizeTextArea(){
     userInput.style.height = 'auto';
     userInput.style.height = 'auto';
     userInput.style.height = userInput.scrollHeight + 'px';
+}
+
+function removeChinesePunctuation(text){
+    //Remove all common punctuations used in chinese writing
+    const regex = /[\s\u3000-\u303F\uff00-\uffef]/g;
+
+    //Replace matched characters with empty string
+    return text.replace(regex, '');
 }
 
 //Split the translated and reference texts into words
@@ -264,7 +283,19 @@ peekButton.addEventListener('click', () => {
         peekVerse.textContent = 'Check already used!';
         peekWindow.style.display = 'block';
     }
+
+
 });
+
+// This function checks if the click is outside the modal
+function handleClickOutside(event) {
+    if ((peekWindow).contains(event.target)) {
+        peekWindow.style.display = 'none';
+    }
+}
+
+// Attach the event listener to the whole document
+document.addEventListener('click', handleClickOutside);
 
 //If fuzz switch is turned on check all translation
 fuzzSwitch.addEventListener('change', () => {
@@ -376,14 +407,16 @@ userInput.addEventListener('input', () => {
 
     //Calculate bleu score differently for chinese
     if(currentLanguage === 'chinese') {
-        calculateBLEUScore(userAnswer,verseText)
-            .then(score => currentScore = Math.round(score * 4));
 
-        console.log(verseText);
+        let chineseText = removeChinesePunctuation(verseText);
 
-        calculateBLEUScore(userAnswer, verseText)
-            .then(score => console.log('BLEU Score:', score))
-            .catch(error => console.error('An error occurred:', error));
+        //Use the calculate bleu score function created for chinese
+        calculateBLEUScore(userAnswer,chineseText)
+            .then(score => currentScore = Math.round(score));
+
+        console.log(currentScore);
+        console.log(userAnswer);
+        console.log(chineseText);
 
         //Update current score
         if (showCurrentScore === true) {

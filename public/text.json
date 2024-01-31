@@ -7,7 +7,7 @@
       "niv": " In the beginning God created the heavens and the earth.",
       "nlt": " In the beginning God created the heavens and the earth.",
       "kjv": " In the beginning God created the heaven and the earth.",
-      "chinese": "起初 ， 神 创造 天地 。",
+      "chinese": "起初，神创造天地。",
       "paraphrases":[
         "At the start, the heavens and the earth were brought into existence by God.",
         "At the start of everything, the heavens and the earth were brought into existence by God.",
@@ -15,12 +15,13 @@
         "God made the heavens and the earth at the start."
         ],
       "chineseParaphrases": [
-        "最开始，宇宙由神所创。",
-        "一开始，神是创造天与地的。",
-        "在初始时，天地是由神来创造的。",
-        "起初的时候，天和地是神创造出来的。"
+        "神最初创造了天地。",
+        "神在最初创造了天地。",
+        "最初，上帝创立了宇宙的天与地。",
+        "在最初的时候，神创造了天地。"
       ],
-      "themes": ["Creation", "Beginning", "God's Power"]
+      "themes": ["Creation", "Beginning", "God's Power"],
+      "chineseTheme": "创造"
     },
     {
       "verse": "Genesis 1:27",
@@ -30,7 +31,7 @@
       "nlt": " So God created human beings in his own image. In the image of God he created them; male and female he created them.",
       "kjv": " So God created man in his own image, in the image of God created he him; male and female created he them.",
       "net": " God created humankind in his own image, in the image of God he created them, male and female he created them.",
-      "chinese": "于是 ， 神 照着 自己 的 形象 创造 人 ； 就是 照着 神 的 形象 创造 了 他 ； 他 所 创造 的 有 男 有 女 。",
+      "chinese": "神就照着自己的形像造人，乃是照着他的形像造男造女。",
       "paraphrases": [
         "God made humans in his own likeness, both male and female.",
         "In the likeness of God, humans were brought forth, both male and female.",
@@ -38,12 +39,13 @@
         "God made human beings in his likeness - both male and female."
       ],
       "chineseParaphrases": [
-        "因此，上帝按照自己的形象创造了人类；确切地说，是依照上帝的形象来创造的；他创造的人包括男性和女性",
-        "于是，按照神自身的形象，神造了人；就是按照他的形象；神造的人中既有男性也有女性",
-        "因此，神根据自己的形象创造了人类，即是依据神的形象来创造；他所创造的包含男性和女性。",
-        "神依照自己的形象创造了人；也就是说，根据神的形象创造了人；他创造的人既有男性也有女性。"
+        "上帝按照他自己的形像造了人，创造了男女。",
+        "上帝按照他自己的形像创造了男女。",
+        "神是按照自己的形象造人，包括男人和女人。",
+        "上帝按照自己的形像创造了男性和女性。"
       ],
-      "themes": ["Creation of Mankind", "Image of God", "Man and Woman"]
+      "themes": ["Creation of Mankind", "Image of God", "Man and Woman"],
+      "chineseTheme": "神按自己形象创造人类"
     },
 
     {
@@ -54,7 +56,7 @@
       "nlt": " This explains why a man leaves his father and mother and is joined to his wife, and the two are united into one.",
       "kjv": " Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
       "net": " That is why a man leaves his father and mother and unites with his wife, and they become a new family.",
-      "chinese": "因此 人 要 离开 父母 ， 和 妻子 连合 ， 二 人 成为 一体 。",
+      "chinese": "因此，人要离开父母，与妻子连合，二人成为一体。",
       "paraphrases": [
         "As a result, a husband must leave his parents and cling to his wife, and they will become one body.",
         "Thus, a man is required to abandon his parents and cling to his spouse, becoming united as one entity.",
@@ -62,12 +64,13 @@
         "Hence, a man will depart from his parents and cling to his spouse, and they will become united as one."
       ],
       "chineseParaphrases": [
-        "因此，一个人将离开他的父母，与他的妻子结合，共同形成一个整体。",
-        "所以人要和父母告别，与妻子结成连理，两人融为一体。",
-        "人应当离开他的父母，与妻子结合，两人合而为一。\n",
-        "人必须离开父母，与其妻子紧密相连，两人共成一体"
+        "所以，人要离开自己的父母，与自己的妻子结合，成为一个整体。",
+        "所以，一个人要离开他的父母，和他的妻子结合为一体。",
+        "所以，人应该离开父母，与妻子结为一体，成为一个整体。",
+        "所以，人要离开父母，与妻子结合，成为一个整体。"
       ],
-      "themes": ["Marriage", "Unity", "Leaving Family"]
+      "themes": ["Marriage", "Unity", "Leaving Family"],
+      "chineseThemes": "婚姻"
     },
 
     {

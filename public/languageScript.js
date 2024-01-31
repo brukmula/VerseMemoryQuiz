@@ -46,30 +46,30 @@ function english(){
     fuzzText.innerText = 'Fuzzy:'
     tootTipText.innerText = 'When fuzzy score is activated, your guess will be checked against all translations.'
     helpText.innerText = 'Help';
-    paraphraseTitleText.innerText = 'Paraphrase';
+    paraphraseTitleText.innerText = 'Meaning of Verse';
     answerText.innerText = 'Enter Your Answer';
     checkVerseText.innerText = 'Check Verse';
     newVerseText.innerText = 'New Verse';
-    paraphraseButtonText.innerText = 'Other Paraphrase';
+    paraphraseButtonText.innerText = 'Other expression of the meaning';
     completedVerseText.innerText = 'Completed Verse';
 }
 
 //Change app text to Chinese
 function chinese(){
     logo.innerText = '圣经经文记忆测验';
-    difficultyText.innerText = '困难';
+    difficultyText.innerText = '难度';
     selectDifficultyText.innerText = '选择难度';
     selectVersionText.innerText = '选择版本';
     gameText.innerText = '改变游戏模式';
-    fuzzText.innerText = '回合分数'
+    fuzzText.innerText = ' 模糊匹配'
     tootTipText.innerText = '当回合计分被激活时，您的猜测将与所有翻译进行检查。';
     helpText.innerText = '帮助';
-    paraphraseTitleText.innerText = '释义';
-    answerText.innerText = '输入您的答案';
-    checkVerseText.innerText = '检查圣经经文';
-    newVerseText.innerText = '新的圣经经文'
+    paraphraseTitleText.innerText = '经文内容';
+    answerText.innerText = '输入您的答案 (猜完后按空格键)';
+    checkVerseText.innerText = '查看经文';
+    newVerseText.innerText = ' 新的经文'
     paraphraseButtonText.innerText = '其他释义';
-    completedVerseText.innerText = '完整圣经经文';
+    completedVerseText.innerText = '完整经文';
 }
 
 function amharic(){
@@ -77,16 +77,16 @@ function amharic(){
     difficultyText.innerText = 'ክህሎት';
     selectDifficultyText.innerText = 'የክህሎት ደረጃ';
     selectVersionText.innerText = 'ትርጉም ይምረጡ';
-    gameText.innerText = 'Change Game Mode'
-    fuzzText.innerText = 'Fuzzy:'
-    tootTipText.innerText = 'When fuzzy score is activated, your guess will be checked against all translations.'
+    gameText.innerText = 'የጨዋታ ሁነታን ይቀይሩ'
+    fuzzText.innerText = 'ፋዚ'
+    tootTipText.innerText = 'ሲነቃ የእርስዎ ግምት በሁሉም ትርጉሞች ላይ ይመረመራል።'
     helpText.innerText = 'እርዳታ';
-    paraphraseTitleText.innerText = 'ገለጻ';
+    paraphraseTitleText.innerText = 'ሐረግ';
     answerText.innerText = 'መልሱን እዚህ ያስገቡ';
-    checkVerseText.innerText = 'Check Verse';
-    newVerseText.innerText = 'New Verse';
-    paraphraseButtonText.innerText = 'Other Paraphrase';
-    completedVerseText.innerText = 'Completed Verse';
+    checkVerseText.innerText = 'ጥቅስ ይመልከቱ';
+    newVerseText.innerText = 'አዲስ ጥቅስ';
+    paraphraseButtonText.innerText = 'ሌላ ሐረግ';
+    completedVerseText.innerText = 'ሙሉ ጥቅስ';
 }
 
 function spanish(){

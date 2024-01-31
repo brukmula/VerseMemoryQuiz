@@ -12,7 +12,7 @@
         <label id="languageText" class="diff" for ="language"><b>Language</b></label>
         <select id = "language" class = "dropdown">
             <option value="english">English</option>
-            <option value="chinese">中国人</option>
+            <option value="chinese">中文</option>
             <option value="amharic">አማርኛ</option>
             <option value="spanish">Español</option>
         </select>
@@ -31,15 +31,15 @@
         <label class = "diff" for="difficulty"><b id="difficultyText">Difficulty:</b> </label>
         <select id = "difficulty" class = "dropdown">
             <option id = "difficultySelect" value = "none" selected = "selected" hidden>Select Difficulty</option>
-            <option value = "100" >100% (Exact)</option>
+            <option value = "100" >100%</option>
             <option value = "75">75%</option>
             <option value = "50">50%</option>
             <option value = "25">25%</option>
             <option value = "10">10%</option>
         </select>
-        <label class = "diff" for="versionSelect"><b>Version Select:</b> </label>
+        <label class = "diff" for="versionSelect"><b>Version:</b> </label>
         <select id = "versionSelect" class = "dropdown">
-            <option id = "selectVersion" value = "none" selected = "selected" hidden>Select Version</option>
+            <option id = "selectVersion" value = "none" selected = "selected" hidden>Version</option>
             <option value = "esv" >ESV</option>
             <option value = "kjv">KJV</option>
             <option value = "net">NET</option>
@@ -62,9 +62,9 @@
 
     <div class = "box">
         <p>
-            <b id = "paraphraseBoxTitle" class = "box-title">Paraphrase</b>
-            <button id = "peek-button" class = "peek-button"> Check Verse </button>
+            <b id = "paraphraseBoxTitle" class = "box-title">Meaning of Verse</b>
             <button id="redo" class = "redo">New Verse</button>
+            <button id = "peek-button" class = "peek-button"> Check Verse </button>
         </p>
         <p id="paraphrase" class = "box-content"></p>
         <p id = "themes" class = "box-content"></p>
@@ -158,5 +158,6 @@
 
 <script src="script.js"></script>
 <script src="languageScript.js"></script>
+<script src="dropdownText.js"></script>
 </body>
 </html>

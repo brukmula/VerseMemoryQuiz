@@ -21,7 +21,9 @@ def get_bleu_score():
     reference_text = data['reference']
 
     segmented_candidate = segment_chinese_text(candidate_text)
-    bleu_score = calculate_bleu(segmented_candidate, reference_text)
+    segmented_reference = segment_chinese_text(reference_text)
+
+    bleu_score = calculate_bleu(segmented_candidate, segmented_reference)
 
     return jsonify({'bleu_score': bleu_score})
 
