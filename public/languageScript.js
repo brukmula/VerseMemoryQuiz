@@ -57,7 +57,6 @@ function english(){
 //Change app text to Chinese
 function chinese(){
     logo.innerText = '圣经经文记忆测验';
-    difficultyText.innerText = '难度';
     selectDifficultyText.innerText = '选择难度';
     selectVersionText.innerText = '选择版本';
     gameText.innerText = '改变游戏模式';
