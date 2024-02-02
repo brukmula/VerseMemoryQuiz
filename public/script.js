@@ -240,7 +240,7 @@ async function calculateBLEUScore(candidateText, referenceText) {
 }
 
 //Fetch JSON data asynchronously
-fetch('/VerseMemoryQuiz/public/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(data => {
         bibleData = data;
